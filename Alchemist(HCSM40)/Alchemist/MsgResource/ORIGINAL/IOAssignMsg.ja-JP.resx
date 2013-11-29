@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IO_100" xml:space="preserve">
+    <value>SOL 100  [カット上]</value>
+  </data>
+  <data name="IO_101" xml:space="preserve">
+    <value>SOL 101  [カット下]</value>
+  </data>
+  <data name="IO_102" xml:space="preserve">
+    <value>SOL 102  [No. 1 クランプ]</value>
+  </data>
+  <data name="IO_103" xml:space="preserve">
+    <value>SOL 103  [エアフィード]</value>
+  </data>
+  <data name="IO_104" xml:space="preserve">
+    <value>SOL 104  [予約済]</value>
+  </data>
+  <data name="IO_105" xml:space="preserve">
+    <value>SOL 105  [No. 1 バキューム]</value>
+  </data>
+  <data name="IO_106" xml:space="preserve">
+    <value>SOL 106  [予約済]</value>
+  </data>
+  <data name="IO_107" xml:space="preserve">
+    <value>SOL 107  [No. 2 バキューム]</value>
+  </data>
+  <data name="IO_108" xml:space="preserve">
+    <value>SOL 108  [搬送クランプ]</value>
+  </data>
+  <data name="IO_109" xml:space="preserve">
+    <value>SOL 109  [排出クランプ]</value>
+  </data>
+  <data name="IO_110" xml:space="preserve">
+    <value>SOL 110</value>
+  </data>
+  <data name="IO_111" xml:space="preserve">
+    <value>SOL 111  [エアー吹き]</value>
+  </data>
+  <data name="IO_112" xml:space="preserve">
+    <value>SOL 112  [キャリアカット1]</value>
+  </data>
+  <data name="IO_113" xml:space="preserve">
+    <value>SOL 113  [キャリアカット2]</value>
+  </data>
+  <data name="IO_114" xml:space="preserve">
+    <value>ベルトシュータ</value>
+  </data>
+  <data name="IO_115" xml:space="preserve">
+    <value>電線 ターンテーブル</value>
+  </data>
+  <data name="IO_116" xml:space="preserve">
+    <value>圧着機 1 インチング SW ランプ</value>
+  </data>
+  <data name="IO_117" xml:space="preserve">
+    <value>紙巻 1-2 (アプリチェンジャ用)</value>
+  </data>
+  <data name="IO_118" xml:space="preserve">
+    <value>圧着機 2 インチング SW ランプ</value>
+  </data>
+  <data name="IO_119" xml:space="preserve">
+    <value>紙巻 2-2 (アプリチェンジャ用)</value>
+  </data>
+  <data name="IO_120" xml:space="preserve">
+    <value>スタート LED (サブ操作ボックス 1, 2)</value>
+  </data>
+  <data name="IO_121" xml:space="preserve">
+    <value>ストップ LED (サブ操作ボックス 1, 2)</value>
+  </data>
+  <data name="IO_122" xml:space="preserve">
+    <value>リセット LED (サブ操作ボックス 1, 2)</value>
+  </data>
+  <data name="IO_123" xml:space="preserve">
+    <value>紙巻 1</value>
+  </data>
+  <data name="IO_124" xml:space="preserve">
+    <value>紙巻 2</value>
+  </data>
+  <data name="IO_125" xml:space="preserve">
+    <value>PFM (CFM) リセット</value>
+  </data>
+  <data name="IO_126" xml:space="preserve">
+    <value>PFM トリガ 1</value>
+  </data>
+  <data name="IO_127" xml:space="preserve">
+    <value>PFM トリガ 2</value>
+  </data>
+  <data name="IO_128" xml:space="preserve">
+    <value>パトライト 赤</value>
+  </data>
+  <data name="IO_129" xml:space="preserve">
+    <value>パトライト 黄</value>
+  </data>
+  <data name="IO_130" xml:space="preserve">
+    <value>パトライト 緑</value>
+  </data>
+  <data name="IO_131" xml:space="preserve">
+    <value>パトライト ブザー</value>
+  </data>
+  <data name="IO_132" xml:space="preserve">
+    <value>アワーメータ</value>
+  </data>
+  <data name="IO_133" xml:space="preserve">
+    <value>SOL 133 [防水 1 挿入前後]</value>
+  </data>
+  <data name="IO_134" xml:space="preserve">
+    <value>SOL 134 [防水 1 押し込み]</value>
+  </data>
+  <data name="IO_135" xml:space="preserve">
+    <value>SOL 135 [防水 1 開閉]</value>
+  </data>
+  <data name="IO_136" xml:space="preserve">
+    <value>SOL 136 [防水 2 押し込み]</value>
+  </data>
+  <data name="IO_137" xml:space="preserve">
+    <value>SOL 137 [防水 2 開閉]</value>
+  </data>
+  <data name="IO_138" xml:space="preserve">
+    <value>防水 1 パーツフィーダ 電源</value>
+  </data>
+  <data name="IO_139" xml:space="preserve">
+    <value>防水 2 パーツフィーダ 電源</value>
+  </data>
+  <data name="IO_140" xml:space="preserve">
+    <value>1側 パーツフィーダ台SOL [防水空送エアー]</value>
+  </data>
+  <data name="IO_141" xml:space="preserve">
+    <value>1側 パーツフィーダ台SOL [防水セパレータ]</value>
+  </data>
+  <data name="IO_142" xml:space="preserve">
+    <value>2側 パーツフィーダ台SOL [防水空送エアー]</value>
+  </data>
+  <data name="IO_143" xml:space="preserve">
+    <value>2側 パーツフィーダ台SOL [防水セパレータ]</value>
+  </data>
+  <data name="IO_144" xml:space="preserve">
+    <value>ストリップミスセンサ 1 クロック</value>
+  </data>
+  <data name="IO_145" xml:space="preserve">
+    <value>ストリップミスセンサ 1 データ</value>
+  </data>
+  <data name="IO_146" xml:space="preserve">
+    <value>ストリップミスセンサ 2 クロック</value>
+  </data>
+  <data name="IO_147" xml:space="preserve">
+    <value>ストリップミスセンサ 2 データ</value>
+  </data>
+  <data name="IO_148" xml:space="preserve">
+    <value>SOL 148 [チョッパー]</value>
+  </data>
+  <data name="IO_149" xml:space="preserve">
+    <value>SOL 150 [電線アンクランプ]</value>
+  </data>
+  <data name="IO_150" xml:space="preserve">
+    <value>SOL 150 [フィード開閉]</value>
+  </data>
+  <data name="IO_151" xml:space="preserve">
+    <value>SOL 151 [電線セレクタ 1]</value>
+  </data>
+  <data name="IO_152" xml:space="preserve">
+    <value>SOL 152 [電線セレクタ 1]</value>
+  </data>
+  <data name="IO_153" xml:space="preserve">
+    <value>SOL 153 [電線セレクタ 2]</value>
+  </data>
+  <data name="IO_154" xml:space="preserve">
+    <value>SOL 154 [電線セレクタ 2]</value>
+  </data>
+  <data name="IO_155" xml:space="preserve">
+    <value>電線 ターンテーブル 2</value>
+  </data>
+  <data name="IO_156" xml:space="preserve">
+    <value>CFM プログラム番号 BIT 0</value>
+  </data>
+  <data name="IO_157" xml:space="preserve">
+    <value>CFM プログラム番号 BIT 1</value>
+  </data>
+  <data name="IO_158" xml:space="preserve">
+    <value>CFM プログラム番号 BIT 2</value>
+  </data>
+  <data name="IO_159" xml:space="preserve">
+    <value>CFM プログラム番号 BIT 3</value>
+  </data>
+  <data name="IO_160" xml:space="preserve">
+    <value>CFM プログラム番号 BIT 4</value>
+  </data>
+  <data name="IO_161" xml:space="preserve">
+    <value>CFM STROBE</value>
+  </data>
+  <data name="IO_162" xml:space="preserve">
+    <value>CFM リモート ON</value>
+  </data>
+  <data name="IO_163" xml:space="preserve">
+    <value>CFM ティーチ ON</value>
+  </data>
+  <data name="IO_200" xml:space="preserve">
+    <value>ストリップ検出 1</value>
+  </data>
+  <data name="IO_201" xml:space="preserve">
+    <value>圧着 1 検出 (PFM / CFM)</value>
+  </data>
+  <data name="IO_202" xml:space="preserve">
+    <value>ストリップ検出 2</value>
+  </data>
+  <data name="IO_203" xml:space="preserve">
+    <value>圧着 2 検出 (PFM / CFM)</value>
+  </data>
+  <data name="IO_204" xml:space="preserve">
+    <value>エアーダウン</value>
+  </data>
+  <data name="IO_205" xml:space="preserve">
+    <value>電線有無 1</value>
+  </data>
+  <data name="IO_206" xml:space="preserve">
+    <value>電線過負荷 1</value>
+  </data>
+  <data name="IO_207" xml:space="preserve">
+    <value>電線継目検出 1</value>
+  </data>
+  <data name="IO_208" xml:space="preserve">
+    <value>圧着 1 検出 (ファイバー)</value>
+  </data>
+  <data name="IO_209" xml:space="preserve">
+    <value>圧着 2 検出 (ファイバー)</value>
+  </data>
+  <data name="IO_212" xml:space="preserve">
+    <value>圧着機 1 インチング SW</value>
+  </data>
+  <data name="IO_214" xml:space="preserve">
+    <value>圧着機 2 インチング SW</value>
+  </data>
+  <data name="IO_216" xml:space="preserve">
+    <value>スタート SW (サブ制御ボックス 1, 2)</value>
+  </data>
+  <data name="IO_217" xml:space="preserve">
+    <value>ストップ SW (サブ制御ボックス 1, 2)</value>
+  </data>
+  <data name="IO_218" xml:space="preserve">
+    <value>リセット SW (サブ制御ボックス 1, 2)</value>
+  </data>
+  <data name="IO_219" xml:space="preserve">
+    <value>非常停止 SW (サブ操作ボックス 1, 2)</value>
+  </data>
+  <data name="IO_224" xml:space="preserve">
+    <value>端子有無 サイド 1A</value>
+  </data>
+  <data name="IO_225" xml:space="preserve">
+    <value>端子過負荷 サイド 1A</value>
+  </data>
+  <data name="IO_226" xml:space="preserve">
+    <value>端子有無 サイド 1B</value>
+  </data>
+  <data name="IO_227" xml:space="preserve">
+    <value>端子過負荷 サイド 1B</value>
+  </data>
+  <data name="IO_228" xml:space="preserve">
+    <value>端子有無 エンド 1</value>
+  </data>
+  <data name="IO_229" xml:space="preserve">
+    <value>端子過負荷 エンド 1</value>
+  </data>
+  <data name="IO_230" xml:space="preserve">
+    <value>端子有無 エンド 2</value>
+  </data>
+  <data name="IO_231" xml:space="preserve">
+    <value>端子過負荷 エンド 2</value>
+  </data>
+  <data name="IO_232" xml:space="preserve">
+    <value>エリアセンサー</value>
+  </data>
+  <data name="IO_238" xml:space="preserve">
+    <value>アプリチェンジャ 選択検出 1A</value>
+  </data>
+  <data name="IO_239" xml:space="preserve">
+    <value>アプリチェンジャ 選択検出 1B</value>
+  </data>
+  <data name="IO_240" xml:space="preserve">
+    <value>アプリチェンジャ 選択検出 2A</value>
+  </data>
+  <data name="IO_241" xml:space="preserve">
+    <value>アプリチェンジャ 選択検出 2B</value>
+  </data>
+  <data name="IO_242" xml:space="preserve">
+    <value>1側 防水栓有無</value>
+  </data>
+  <data name="IO_243" xml:space="preserve">
+    <value>1側 防水通過検出</value>
+  </data>
+  <data name="IO_244" xml:space="preserve">
+    <value>防水栓挿入検出 1</value>
+  </data>
+  <data name="IO_245" xml:space="preserve">
+    <value>2側 防水栓有無</value>
+  </data>
+  <data name="IO_246" xml:space="preserve">
+    <value>2側 防水通過検出</value>
+  </data>
+  <data name="IO_247" xml:space="preserve">
+    <value>防水栓挿入検出 2</value>
+  </data>
+  <data name="IO_248" xml:space="preserve">
+    <value>フィード開閉 SW</value>
+  </data>
+  <data name="IO_249" xml:space="preserve">
+    <value>ワイヤーセレクタ開放 SW</value>
+  </data>
+  <data name="IO_250" xml:space="preserve">
+    <value>電線有無 2</value>
+  </data>
+  <data name="IO_251" xml:space="preserve">
+    <value>電線過負荷 2</value>
+  </data>
+  <data name="IO_252" xml:space="preserve">
+    <value>電線継目検出 2</value>
+  </data>
+  <data name="IO_253" xml:space="preserve">
+    <value>アプリロック検出 1</value>
+  </data>
+  <data name="IO_254" xml:space="preserve">
+    <value>アプリロック検出 2</value>
+  </data>
+  <data name="IO_255" xml:space="preserve">
+    <value>ピンセット SW 1</value>
+  </data>
+  <data name="IO_256" xml:space="preserve">
+    <value>ピンセット SW 2</value>
+  </data>
+  <data name="IO_257" xml:space="preserve">
+    <value>旋回カバー 検出</value>
+  </data>
+  <data name="IO_258" xml:space="preserve">
+    <value>排出カバー 検出</value>
+  </data>
+  <data name="IO_259" xml:space="preserve">
+    <value>端子有無 サイド 2A</value>
+  </data>
+  <data name="IO_260" xml:space="preserve">
+    <value>端子過負荷 サイド 2A</value>
+  </data>
+  <data name="IO_261" xml:space="preserve">
+    <value>端子有無 サイド 2B</value>
+  </data>
+  <data name="IO_262" xml:space="preserve">
+    <value>端子過負荷 サイド 2B</value>
+  </data>
+  <data name="IO_263" xml:space="preserve">
+    <value>CFM ティーチング中</value>
+  </data>
+</root>

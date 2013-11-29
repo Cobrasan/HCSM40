@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0804DFC0-5785-4BDE-9A22-E685C7BE7E8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alchemist</RootNamespace>
+    <AssemblyName>Alchemist</AssemblyName>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>Resources\mainIcon.ico</ApplicationIcon>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>ja-JP</TargetCulture>
+    <ProductName>Alchemist</ProductName>
+    <PublisherName>Alchemist</PublisherName>
+    <MinimumRequiredVersion>10.1.0.1</MinimumRequiredVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>10.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug1\</OutputPath>
+    <DefineConstants>TRACE;FOR_JN03SDC;FOR_Y;OMOIKANE;DUMMYSYSTEM</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release1\</OutputPath>
+    <DefineConstants>TRACE;HCSM40;TENKEY</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug with DummySystem|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug with DummySystem\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;HCSM40;DUMMYSYSTEM</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonControl.cs" />
+    <Compile Include="ButtonControl.machinecustom.cs" />
+    <Compile Include="Form\learnItemDataEditfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\learnItemDataEditfrm.Designer.cs">
+      <DependentUpon>learnItemDataEditfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ioMonitorfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ioMonitorfrm.designer.cs">
+      <DependentUpon>ioMonitorfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\tenKeyfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\tenKeyfrm.designer.cs">
+      <DependentUpon>tenKeyfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenkeyControl.cs" />
+    <Compile Include="MsgResource\dummyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dummyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\errImageZoomfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\errImageZoomfrm.Designer.cs">
+      <DependentUpon>errImageZoomfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\errInfoMsgfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\IOAssignMsg.Designer.cs">
+      <DependentUpon>IOAssignMsg.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\MainteLogMsg.Designer.cs">
+      <DependentUpon>MainteLogMsg.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\MainteLogMsg.ja-JP.Designer.cs">
+      <DependentUpon>MainteLogMsg.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\MainteLogMsg.zh-CN.Designer.cs">
+      <DependentUpon>MainteLogMsg.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\SystemScreenMsg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemScreenMsg.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\SystemScreenMsg.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemScreenMsg.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\SystemScreenMsg.ja-JP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemScreenMsg.ja-JP.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\SystemScreenMsg.zh-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemScreenMsg.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\StatusDspMsg.Designer.cs">
+      <DependentUpon>StatusDspMsg.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\StatusDspMsg.en-US.Designer.cs">
+      <DependentUpon>StatusDspMsg.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\StatusDspMsg.ja-JP.Designer.cs">
+      <DependentUpon>StatusDspMsg.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\StatusDspMsg.zh-CN.Designer.cs">
+      <DependentUpon>StatusDspMsg.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Storage\LearnItemDataStorage.cs" />
+    <Compile Include="XML\MainteLogXMLAccessor.cs" />
+    <Compile Include="Storage\MainteLogStorage.cs" />
+    <Compile Include="Utilitys\CommandUtil.cs" />
+    <Compile Include="Form\learnDataSearchfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\learnDataSearchfrm.Designer.cs">
+      <DependentUpon>learnDataSearchfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\bankOperationfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\connectOperationfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\counterfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\mainfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\machineOperationfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\systemConfigurationfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\workDetailSpeedfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataController.private.cs" />
+    <Compile Include="DataController.Thread.cs" />
+    <Compile Include="Form\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\bankOperationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\bankOperationfrm.Designer.cs">
+      <DependentUpon>bankOperationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\connectOperationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\connectOperationfrm.Designer.cs">
+      <DependentUpon>connectOperationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\counterfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\counterfrm.Designer.cs">
+      <DependentUpon>counterfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CustomComponents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\errInfoMsgfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\errInfoMsgfrm.Designer.cs">
+      <DependentUpon>errInfoMsgfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\iocheckfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\iocheckfrm.Designer.cs">
+      <DependentUpon>iocheckfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\machineOperationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\machineOperationfrm.Designer.cs">
+      <DependentUpon>machineOperationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\mainfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\mainfrm.Designer.cs">
+      <DependentUpon>mainfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\mainfrm.function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\passwordCollationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\passwordCollationfrm.Designer.cs">
+      <DependentUpon>passwordCollationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\setupOperationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\setupOperationfrm.Designer.cs">
+      <DependentUpon>setupOperationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\syncroprogressfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\syncroprogressfrm.Designer.cs">
+      <DependentUpon>syncroprogressfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\systemConfigurationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\systemConfigurationfrm.Designer.cs">
+      <DependentUpon>systemConfigurationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\workDetailItemfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\workDetailItemfrm.Designer.cs">
+      <DependentUpon>workDetailItemfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\workDetailMotionfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\workDetailMotionfrm.Designer.cs">
+      <DependentUpon>workDetailMotionfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\workDetailSpeedfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\workDetailSpeedfrm.Designer.cs">
+      <DependentUpon>workDetailSpeedfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\CorrectDataMsg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CorrectDataMsg.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DataController.cs" />
+    <Compile Include="MachineConnector.cs" />
+    <Compile Include="MachineConnector.Thread.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MsgResource\ORIGINAL\TimingDataMsg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimingDataMsg.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\TimingDataMsg.en-US.Designer.cs">
+      <DependentUpon>TimingDataMsg.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\TimingDataMsg.zh-CN.Designer.cs">
+      <DependentUpon>TimingDataMsg.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\CorrectDataMsg.zh-CN.Designer.cs">
+      <DependentUpon>CorrectDataMsg.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\CorrectDataMsg.en-US.Designer.cs">
+      <DependentUpon>CorrectDataMsg.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\WorkDataMsg.zh-CN.Designer.cs">
+      <DependentUpon>WorkDataMsg.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\WorkDataMsg.en-US.Designer.cs">
+      <DependentUpon>WorkDataMsg.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\ScreenMsg.zh-CN.Designer.cs">
+      <DependentUpon>ScreenMsg.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\ScreenMsg.en-US.Designer.cs">
+      <DependentUpon>ScreenMsg.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\ScreenMsg.Designer.cs">
+      <DependentUpon>ScreenMsg.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\CorrectDataMsg.ja-JP.Designer.cs">
+      <DependentUpon>CorrectDataMsg.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\ScreenMsg.ja-JP.Designer.cs">
+      <DependentUpon>ScreenMsg.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\TimingDataMsg.ja-JP.Designer.cs">
+      <DependentUpon>TimingDataMsg.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MsgResource\ORIGINAL\WorkDataMsg.ja-JP.Designer.cs">
+      <DependentUpon>WorkDataMsg.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Form\setupOperationfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\splushScreenfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\splushScreenfrm.Designer.cs">
+      <DependentUpon>splushScreenfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\BankDataStorage.cs" />
+    <Compile Include="Storage\CorrectDataStorage.cs" />
+    <Compile Include="Storage\LearnDataStorage.cs" />
+    <Compile Include="Storage\MemoryAllocationData.cs" />
+    <Compile Include="Storage\SystemDataStorage.cs" />
+    <Compile Include="WinAPI.cs" />
+    <Compile Include="MsgResource\ORIGINAL\WorkDataMsg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkDataMsg.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDataMemory.cs" />
+    <Compile Include="Form\workDetailMotionfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\workDetailItemfrm.machinecustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XML\BankXmlAccessor.cs" />
+    <Compile Include="XML\CorrectDataXMLAccessor.cs" />
+    <Compile Include="XML\LearnDataXMLAccessor.cs" />
+    <Compile Include="XML\MemallocXMLAccessor.cs" />
+    <Compile Include="XML\SystemXMLAccessor.cs" />
+    <Compile Include="XML\XMLAccessor.cs" />
+    <Compile Include="XML\LearnItemDataXMLAccessor.cs" />
+    <EmbeddedResource Include="Form\ioMonitorfrm.en-US.resx">
+      <DependentUpon>ioMonitorfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ioMonitorfrm.ja-JP.resx">
+      <DependentUpon>ioMonitorfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ioMonitorfrm.resx">
+      <DependentUpon>ioMonitorfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ioMonitorfrm.zh-CN.resx">
+      <DependentUpon>ioMonitorfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnDataSearchfrm.ja-JP.resx">
+      <DependentUpon>learnDataSearchfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnItemDataEditfrm.en-US.resx">
+      <DependentUpon>learnItemDataEditfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnItemDataEditfrm.ja-JP.resx">
+      <DependentUpon>learnItemDataEditfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnItemDataEditfrm.resx">
+      <DependentUpon>learnItemDataEditfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnItemDataEditfrm.zh-CN.resx">
+      <DependentUpon>learnItemDataEditfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\tenKeyfrm.resx">
+      <DependentUpon>tenKeyfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\dummyResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>dummyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnDataSearchfrm.en-US.resx">
+      <DependentUpon>learnDataSearchfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnDataSearchfrm.zh-CN.resx">
+      <DependentUpon>learnDataSearchfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\errImageZoomfrm.resx">
+      <DependentUpon>errImageZoomfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\learnDataSearchfrm.resx">
+      <DependentUpon>learnDataSearchfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\bankOperationfrm.en-US.resx">
+      <DependentUpon>bankOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\bankOperationfrm.ja-JP.resx">
+      <DependentUpon>bankOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\bankOperationfrm.resx">
+      <DependentUpon>bankOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\bankOperationfrm.zh-CN.resx">
+      <DependentUpon>bankOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\connectOperationfrm.en-US.resx">
+      <DependentUpon>connectOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\connectOperationfrm.ja-JP.resx">
+      <DependentUpon>connectOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\connectOperationfrm.resx">
+      <DependentUpon>connectOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\connectOperationfrm.zh-CN.resx">
+      <DependentUpon>connectOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\counterfrm.en-US.resx">
+      <DependentUpon>counterfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\counterfrm.ja-JP.resx">
+      <DependentUpon>counterfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\counterfrm.resx">
+      <DependentUpon>counterfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\counterfrm.zh-CN.resx">
+      <DependentUpon>counterfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\errInfoMsgfrm.en-US.resx">
+      <DependentUpon>errInfoMsgfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\errInfoMsgfrm.ja-JP.resx">
+      <DependentUpon>errInfoMsgfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\errInfoMsgfrm.resx">
+      <DependentUpon>errInfoMsgfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\errInfoMsgfrm.zh-CN.resx">
+      <DependentUpon>errInfoMsgfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\iocheckfrm.en-US.resx">
+      <DependentUpon>iocheckfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\iocheckfrm.ja-JP.resx">
+      <DependentUpon>iocheckfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\iocheckfrm.resx">
+      <DependentUpon>iocheckfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\iocheckfrm.zh-CN.resx">
+      <DependentUpon>iocheckfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\machineOperationfrm.en-US.resx">
+      <DependentUpon>machineOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\machineOperationfrm.ja-JP.resx">
+      <DependentUpon>machineOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\machineOperationfrm.resx">
+      <DependentUpon>machineOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\machineOperationfrm.zh-CN.resx">
+      <DependentUpon>machineOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\mainfrm.en-US.resx">
+      <DependentUpon>mainfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\mainfrm.ja-JP.resx">
+      <DependentUpon>mainfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\mainfrm.resx">
+      <DependentUpon>mainfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\mainfrm.zh-CN.resx">
+      <DependentUpon>mainfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\passwordCollationfrm.en-US.resx">
+      <DependentUpon>passwordCollationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\passwordCollationfrm.ja-JP.resx">
+      <DependentUpon>passwordCollationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\passwordCollationfrm.resx">
+      <DependentUpon>passwordCollationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\passwordCollationfrm.zh-CN.resx">
+      <DependentUpon>passwordCollationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\setupOperationfrm.en-US.resx">
+      <DependentUpon>setupOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\setupOperationfrm.ja-JP.resx">
+      <DependentUpon>setupOperationfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\setupOperationfrm.resx">
+      <DependentUpon>setupOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\setupOperationfrm.zh-CN.resx">
+      <DependentUpon>setupOperationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\syncroprogressfrm.en-US.resx">
+      <DependentUpon>syncroprogressfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\syncroprogressfrm.ja-JP.resx">
+      <DependentUpon>syncroprogressfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\syncroprogressfrm.resx">
+      <DependentUpon>syncroprogressfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\syncroprogressfrm.zh-CN.resx">
+      <DependentUpon>syncroprogressfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\systemConfigurationfrm.en-US.resx">
+      <DependentUpon>systemConfigurationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\systemConfigurationfrm.ja-JP.resx">
+      <DependentUpon>systemConfigurationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\systemConfigurationfrm.resx">
+      <DependentUpon>systemConfigurationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\systemConfigurationfrm.zh-CN.resx">
+      <DependentUpon>systemConfigurationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailItemfrm.en-US.resx">
+      <DependentUpon>workDetailItemfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailItemfrm.ja-JP.resx">
+      <DependentUpon>workDetailItemfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailItemfrm.resx">
+      <DependentUpon>workDetailItemfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailItemfrm.zh-CN.resx">
+      <DependentUpon>workDetailItemfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailMotionfrm.en-US.resx">
+      <DependentUpon>workDetailMotionfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailMotionfrm.ja-JP.resx">
+      <DependentUpon>workDetailMotionfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailMotionfrm.resx">
+      <DependentUpon>workDetailMotionfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailMotionfrm.zh-CN.resx">
+      <DependentUpon>workDetailMotionfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailSpeedfrm.en-US.resx">
+      <DependentUpon>workDetailSpeedfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailSpeedfrm.ja-JP.resx">
+      <DependentUpon>workDetailSpeedfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailSpeedfrm.resx">
+      <DependentUpon>workDetailSpeedfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\workDetailSpeedfrm.zh-CN.resx">
+      <DependentUpon>workDetailSpeedfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\CorrectDataMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CorrectDataMsg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\IOAssignMsg.ja-JP.resx" />
+    <EmbeddedResource Include="MsgResource\ORIGINAL\IOAssignMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IOAssignMsg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\MainteLogMsg.en-US.resx" />
+    <EmbeddedResource Include="MsgResource\ORIGINAL\MainteLogMsg.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainteLogMsg.ja-JP.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\MainteLogMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainteLogMsg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\MainteLogMsg.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainteLogMsg.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\TimingDataMsg.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimingDataMsg.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\TimingDataMsg.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimingDataMsg.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\CorrectDataMsg.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CorrectDataMsg.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\CorrectDataMsg.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CorrectDataMsg.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\WorkDataMsg.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkDataMsg.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\WorkDataMsg.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkDataMsg.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\ScreenMsg.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScreenMsg.zh-CN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\ScreenMsg.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScreenMsg.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\WorkDataMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkDataMsg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\TimingDataMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimingDataMsg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\ScreenMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScreenMsg.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\CorrectDataMsg.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CorrectDataMsg.ja-JP.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\ScreenMsg.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScreenMsg.ja-JP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\TimingDataMsg.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimingDataMsg.ja-JP.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\WorkDataMsg.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkDataMsg.ja-JP.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\splushScreenfrm.resx">
+      <DependentUpon>splushScreenfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\SystemScreenMsg.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SystemScreenMsg.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\SystemScreenMsg.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SystemScreenMsg.ja-JP.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\SystemScreenMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SystemScreenMsg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\SystemScreenMsg.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SystemScreenMsg.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\StatusDspMsg.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusDspMsg.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\StatusDspMsg.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusDspMsg.ja-JP.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\StatusDspMsg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusDspMsg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResource\ORIGINAL\StatusDspMsg.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusDspMsg.zh-CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="File\bankdata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="File\learndata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="File\memalloc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="File\maintelog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="File\learnitemdata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SystemConstants.cs" />
+    <Compile Include="Utilitys\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig0_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig1_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig1_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig1_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig1_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig1_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig1_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig1_9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig2_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig2_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig2_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig2_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig2_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig2_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fig2_9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jam.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Led.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedBlueOff.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedBlueOn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedGreenOff.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedGreenOn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedRed.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedRedOff.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedRedOn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniLedBlueOff.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniLedBlueOffDark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniLedBlueOn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniLedGreenOff.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniLedGreenOn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniLedRedOff.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniLedRedOn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResetBtn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartBtn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopBtn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StripAOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StripBON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrimpAON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crimpBON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalfBON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalfBOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalfAOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalfAON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StripAON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StripBOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrimpAOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrimpBOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SealAOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SealAON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SealBOFF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SealBON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JAMLogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JAMLogo2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="errpic\JN03SD-WP\err001.jpg" />
+    <Content Include="errpic\JN03SD-WP\err002.jpg" />
+    <Content Include="errpic\JN03SD-WP\err003.jpg" />
+    <Content Include="errpic\JN03SD-WP\err004.jpg" />
+    <Content Include="errpic\JN03SD-WP\err005.jpg" />
+    <Content Include="errpic\JN03SD-WP\err006.jpg" />
+    <Content Include="errpic\JN03SD-WP\err007.jpg" />
+    <Content Include="errpic\JN03SD-WP\err008.jpg" />
+    <Content Include="errpic\JN03SD-WP\err009.jpg" />
+    <Content Include="errpic\JN03SD-WP\err00A.jpg" />
+    <Content Include="errpic\JN03SD-WP\err00B.jpg" />
+    <Content Include="errpic\JN03SD-WP\err00C.jpg" />
+    <Content Include="errpic\JN03SD-WP\err00D.jpg" />
+    <Content Include="errpic\JN03SD-WP\err00E.jpg" />
+    <Content Include="errpic\JN03SD-WP\err00F.jpg" />
+    <Content Include="errpic\JN03SD-WP\err010.jpg" />
+    <Content Include="errpic\JN03SD-WP\err012.jpg" />
+    <Content Include="errpic\JN03SD-WP\err013.jpg" />
+    <Content Include="errpic\JN03SD-WP\err014.jpg" />
+    <Content Include="errpic\JN03SD-WP\err017.jpg" />
+    <Content Include="errpic\JN03SD-WP\err01A.jpg" />
+    <Content Include="errpic\JN03SD-WP\err01B.jpg" />
+    <Content Include="errpic\JN03SD-WP\err01C.jpg" />
+    <Content Include="errpic\JN03SD-WP\err029.jpg" />
+    <Content Include="errpic\JN03SD-WP\err02A.jpg" />
+    <Content Include="errpic\JN03SD-WP\err02B.jpg" />
+    <Content Include="errpic\JN03SD-WP\err02D.jpg" />
+    <Content Include="errpic\JN03SD-WP\err02E.jpg" />
+    <Content Include="errpic\JN03SD-WP\err038.jpg" />
+    <Content Include="errpic\JN03SD-WP\err039.jpg" />
+    <Content Include="errpic\JN03SD-WP\err03A.jpg" />
+    <Content Include="errpic\JN03SD-WP\err03C.jpg" />
+    <Content Include="errpic\JN03SD-WP\err03D.jpg" />
+    <Content Include="errpic\JN03SD-WP\err04A.jpg" />
+    <Content Include="errpic\JN03SD-WP\err04B.jpg" />
+    <Content Include="errpic\JN03SD-WP\err04E.jpg" />
+    <Content Include="errpic\JN03SD-WP\err050.jpg" />
+    <Content Include="errpic\JN03SD-WP\err051.jpg" />
+    <Content Include="errpic\JN03SD-WP\err052.jpg" />
+    <Content Include="errpic\JN03SD-WP\err053.jpg" />
+    <Content Include="File\memalloc.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="File\maintelog.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="File\memalloc_ORIGINAL.xml" />
+    <Content Include="File\system.xml" />
+    <Content Include="File\learndatasample.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="File\learnitemdata.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="mainIcon.ico" />
+    <None Include="Resources\NoErrImg.jpg" />
+    <None Include="Resources\splushScreenBg2.bmp" />
+    <None Include="Resources\splushScreenBg.bmp" />
+    <None Include="Resources\splushScreen.bmp" />
+    <None Include="Resources\mainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\omoikane\omoikane\omoikane.csproj">
+      <Project>{0E4DF1FA-B0D6-4DE5-AB66-5AB28BF34D45}</Project>
+      <Name>omoikane</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTact6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblTact6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 79</value>
+  </data>
+  <data name="lblTact6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTact6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblTact6.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lblTact6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTact6.Name" xml:space="preserve">
+    <value>lblTact6</value>
+  </data>
+  <data name="&gt;&gt;lblTact6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTact6.Parent" xml:space="preserve">
+    <value>panelTact</value>
+  </data>
+  <data name="&gt;&gt;lblTact6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTact5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTact5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 46</value>
+  </data>
+  <data name="lblTact5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 25</value>
+  </data>
+  <data name="lblTact5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblTact5.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lblTact5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTact5.Name" xml:space="preserve">
+    <value>lblTact5</value>
+  </data>
+  <data name="&gt;&gt;lblTact5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTact5.Parent" xml:space="preserve">
+    <value>panelTact</value>
+  </data>
+  <data name="&gt;&gt;lblTact5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblTact4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTact4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lblTact4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 25</value>
+  </data>
+  <data name="lblTact4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTact4.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lblTact4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTact4.Name" xml:space="preserve">
+    <value>lblTact4</value>
+  </data>
+  <data name="&gt;&gt;lblTact4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTact4.Parent" xml:space="preserve">
+    <value>panelTact</value>
+  </data>
+  <data name="&gt;&gt;lblTact4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTact3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTact3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 82</value>
+  </data>
+  <data name="lblTact3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 19</value>
+  </data>
+  <data name="lblTact3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTact3.Text" xml:space="preserve">
+    <value>Tact3</value>
+  </data>
+  <data name="lblTact3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTact3.Name" xml:space="preserve">
+    <value>lblTact3</value>
+  </data>
+  <data name="&gt;&gt;lblTact3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTact3.Parent" xml:space="preserve">
+    <value>panelTact</value>
+  </data>
+  <data name="&gt;&gt;lblTact3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblTact2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTact2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 49</value>
+  </data>
+  <data name="lblTact2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 19</value>
+  </data>
+  <data name="lblTact2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTact2.Text" xml:space="preserve">
+    <value>Tact2</value>
+  </data>
+  <data name="lblTact2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTact2.Name" xml:space="preserve">
+    <value>lblTact2</value>
+  </data>
+  <data name="&gt;&gt;lblTact2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTact2.Parent" xml:space="preserve">
+    <value>panelTact</value>
+  </data>
+  <data name="&gt;&gt;lblTact2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblTact1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTact1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="lblTact1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 19</value>
+  </data>
+  <data name="lblTact1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTact1.Text" xml:space="preserve">
+    <value>Tact1</value>
+  </data>
+  <data name="lblTact1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTact1.Name" xml:space="preserve">
+    <value>lblTact1</value>
+  </data>
+  <data name="&gt;&gt;lblTact1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTact1.Parent" xml:space="preserve">
+    <value>panelTact</value>
+  </data>
+  <data name="&gt;&gt;lblTact1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelTact.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 260</value>
+  </data>
+  <data name="panelTact.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 118</value>
+  </data>
+  <data name="panelTact.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panelTact.Name" xml:space="preserve">
+    <value>panelTact</value>
+  </data>
+  <data name="&gt;&gt;panelTact.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTact.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTact.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelCRIMP.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnCRIMPReset2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="btnCRIMPReset2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCRIMPReset2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 95</value>
+  </data>
+  <data name="btnCRIMPReset2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 38</value>
+  </data>
+  <data name="btnCRIMPReset2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnCRIMPReset2.Text" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset2.Name" xml:space="preserve">
+    <value>btnCRIMPReset2</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset2.Parent" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCRIMPReset1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="btnCRIMPReset1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCRIMPReset1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 53</value>
+  </data>
+  <data name="btnCRIMPReset1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 38</value>
+  </data>
+  <data name="btnCRIMPReset1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnCRIMPReset1.Text" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset1.Name" xml:space="preserve">
+    <value>btnCRIMPReset1</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset1.Parent" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;btnCRIMPReset1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblCRIMP3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 18pt, style=Bold</value>
+  </data>
+  <data name="lblCRIMP3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCRIMP3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 95</value>
+  </data>
+  <data name="lblCRIMP3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 38</value>
+  </data>
+  <data name="lblCRIMP3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblCRIMP3.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblCRIMP3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP3.Name" xml:space="preserve">
+    <value>lblCRIMP3</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP3.Parent" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblCRIMP2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 18pt, style=Bold</value>
+  </data>
+  <data name="lblCRIMP2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCRIMP2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 53</value>
+  </data>
+  <data name="lblCRIMP2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 38</value>
+  </data>
+  <data name="lblCRIMP2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblCRIMP2.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblCRIMP2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP2.Name" xml:space="preserve">
+    <value>lblCRIMP2</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP2.Parent" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblCRIMP5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblCRIMP5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCRIMP5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 95</value>
+  </data>
+  <data name="lblCRIMP5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 38</value>
+  </data>
+  <data name="lblCRIMP5.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblCRIMP5.Text" xml:space="preserve">
+    <value>999999</value>
+  </data>
+  <data name="lblCRIMP5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP5.Name" xml:space="preserve">
+    <value>lblCRIMP5</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP5.Parent" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblCRIMP4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblCRIMP4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCRIMP4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 53</value>
+  </data>
+  <data name="lblCRIMP4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 38</value>
+  </data>
+  <data name="lblCRIMP4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblCRIMP4.Text" xml:space="preserve">
+    <value>999999</value>
+  </data>
+  <data name="lblCRIMP4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP4.Name" xml:space="preserve">
+    <value>lblCRIMP4</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP4.Parent" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblCRIMP1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 21.75pt, style=Bold</value>
+  </data>
+  <data name="lblCRIMP1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCRIMP1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 4</value>
+  </data>
+  <data name="lblCRIMP1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 40</value>
+  </data>
+  <data name="lblCRIMP1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblCRIMP1.Text" xml:space="preserve">
+    <value>CRIMP</value>
+  </data>
+  <data name="lblCRIMP1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP1.Name" xml:space="preserve">
+    <value>lblCRIMP1</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP1.Parent" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;lblCRIMP1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panelCRIMP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 384</value>
+  </data>
+  <data name="panelCRIMP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 143</value>
+  </data>
+  <data name="panelCRIMP.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelCRIMP.Name" xml:space="preserve">
+    <value>panelCRIMP</value>
+  </data>
+  <data name="&gt;&gt;panelCRIMP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelCRIMP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelCRIMP.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelLOT.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="textLOTSetNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 15.75pt</value>
+  </data>
+  <data name="textLOTSetNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 58</value>
+  </data>
+  <data name="textLOTSetNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 39</value>
+  </data>
+  <data name="textLOTSetNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="textLOTSetNumber.Text" xml:space="preserve">
+    <value>99999999</value>
+  </data>
+  <data name="textLOTSetNumber.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;textLOTSetNumber.Name" xml:space="preserve">
+    <value>textLOTSetNumber</value>
+  </data>
+  <data name="&gt;&gt;textLOTSetNumber.Type" xml:space="preserve">
+    <value>Alchemist.CustomTextBox, Alchemist, Version=56.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;textLOTSetNumber.Parent" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;textLOTSetNumber.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnLOTDown.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="btnLOTDown.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLOTDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 79</value>
+  </data>
+  <data name="btnLOTDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 26</value>
+  </data>
+  <data name="btnLOTDown.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnLOTDown.Text" xml:space="preserve">
+    <value>DOWN</value>
+  </data>
+  <data name="&gt;&gt;btnLOTDown.Name" xml:space="preserve">
+    <value>btnLOTDown</value>
+  </data>
+  <data name="&gt;&gt;btnLOTDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLOTDown.Parent" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;btnLOTDown.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnLOTUp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="btnLOTUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLOTUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 53</value>
+  </data>
+  <data name="btnLOTUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 26</value>
+  </data>
+  <data name="btnLOTUp.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnLOTUp.Text" xml:space="preserve">
+    <value>UP</value>
+  </data>
+  <data name="&gt;&gt;btnLOTUp.Name" xml:space="preserve">
+    <value>btnLOTUp</value>
+  </data>
+  <data name="&gt;&gt;btnLOTUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLOTUp.Parent" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;btnLOTUp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblLOTSetNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="lblLOTSetNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblLOTSetNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 63</value>
+  </data>
+  <data name="lblLOTSetNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 29</value>
+  </data>
+  <data name="lblLOTSetNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblLOTSetNumber.Text" xml:space="preserve">
+    <value>設定本数</value>
+  </data>
+  <data name="lblLOTSetNumber.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblLOTSetNumber.Name" xml:space="preserve">
+    <value>lblLOTSetNumber</value>
+  </data>
+  <data name="&gt;&gt;lblLOTSetNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLOTSetNumber.Parent" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;lblLOTSetNumber.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnLOTReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="btnLOTReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLOTReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 52</value>
+  </data>
+  <data name="btnLOTReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 50</value>
+  </data>
+  <data name="btnLOTReset.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnLOTReset.Text" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="&gt;&gt;btnLOTReset.Name" xml:space="preserve">
+    <value>btnLOTReset</value>
+  </data>
+  <data name="&gt;&gt;btnLOTReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLOTReset.Parent" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;btnLOTReset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblLOT2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblLOT2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblLOT2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 51</value>
+  </data>
+  <data name="lblLOT2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 52</value>
+  </data>
+  <data name="lblLOT2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblLOT2.Text" xml:space="preserve">
+    <value>99999999</value>
+  </data>
+  <data name="lblLOT2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblLOT2.Name" xml:space="preserve">
+    <value>lblLOT2</value>
+  </data>
+  <data name="&gt;&gt;lblLOT2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLOT2.Parent" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;lblLOT2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblLOT1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 21.75pt, style=Bold</value>
+  </data>
+  <data name="lblLOT1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblLOT1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="lblLOT1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 40</value>
+  </data>
+  <data name="lblLOT1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblLOT1.Text" xml:space="preserve">
+    <value>LOT</value>
+  </data>
+  <data name="lblLOT1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblLOT1.Name" xml:space="preserve">
+    <value>lblLOT1</value>
+  </data>
+  <data name="&gt;&gt;lblLOT1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLOT1.Parent" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;lblLOT1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panelLOT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 136</value>
+  </data>
+  <data name="panelLOT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 118</value>
+  </data>
+  <data name="panelLOT.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelLOT.Name" xml:space="preserve">
+    <value>panelLOT</value>
+  </data>
+  <data name="&gt;&gt;panelLOT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelLOT.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelLOT.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelQTY.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="textQTYSetNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 15.75pt</value>
+  </data>
+  <data name="textQTYSetNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 59</value>
+  </data>
+  <data name="textQTYSetNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 39</value>
+  </data>
+  <data name="textQTYSetNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textQTYSetNumber.Text" xml:space="preserve">
+    <value>99999999</value>
+  </data>
+  <data name="textQTYSetNumber.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;textQTYSetNumber.Name" xml:space="preserve">
+    <value>textQTYSetNumber</value>
+  </data>
+  <data name="&gt;&gt;textQTYSetNumber.Type" xml:space="preserve">
+    <value>Alchemist.CustomTextBox, Alchemist, Version=56.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;textQTYSetNumber.Parent" xml:space="preserve">
+    <value>panelQTY</value>
+  </data>
+  <data name="&gt;&gt;textQTYSetNumber.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblQTYSetNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="lblQTYSetNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblQTYSetNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 64</value>
+  </data>
+  <data name="lblQTYSetNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 29</value>
+  </data>
+  <data name="lblQTYSetNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblQTYSetNumber.Text" xml:space="preserve">
+    <value>設定本数</value>
+  </data>
+  <data name="lblQTYSetNumber.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblQTYSetNumber.Name" xml:space="preserve">
+    <value>lblQTYSetNumber</value>
+  </data>
+  <data name="&gt;&gt;lblQTYSetNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQTYSetNumber.Parent" xml:space="preserve">
+    <value>panelQTY</value>
+  </data>
+  <data name="&gt;&gt;lblQTYSetNumber.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblQTY2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblQTY2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblQTY2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 52</value>
+  </data>
+  <data name="lblQTY2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 52</value>
+  </data>
+  <data name="lblQTY2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblQTY2.Text" xml:space="preserve">
+    <value>99999999</value>
+  </data>
+  <data name="lblQTY2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblQTY2.Name" xml:space="preserve">
+    <value>lblQTY2</value>
+  </data>
+  <data name="&gt;&gt;lblQTY2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQTY2.Parent" xml:space="preserve">
+    <value>panelQTY</value>
+  </data>
+  <data name="&gt;&gt;lblQTY2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnQTYReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="btnQTYReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnQTYReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 53</value>
+  </data>
+  <data name="btnQTYReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 50</value>
+  </data>
+  <data name="btnQTYReset.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnQTYReset.Text" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="&gt;&gt;btnQTYReset.Name" xml:space="preserve">
+    <value>btnQTYReset</value>
+  </data>
+  <data name="&gt;&gt;btnQTYReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnQTYReset.Parent" xml:space="preserve">
+    <value>panelQTY</value>
+  </data>
+  <data name="&gt;&gt;btnQTYReset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblQTY1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 21.75pt, style=Bold</value>
+  </data>
+  <data name="lblQTY1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblQTY1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 3</value>
+  </data>
+  <data name="lblQTY1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 40</value>
+  </data>
+  <data name="lblQTY1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblQTY1.Text" xml:space="preserve">
+    <value>QTY</value>
+  </data>
+  <data name="lblQTY1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblQTY1.Name" xml:space="preserve">
+    <value>lblQTY1</value>
+  </data>
+  <data name="&gt;&gt;lblQTY1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQTY1.Parent" xml:space="preserve">
+    <value>panelQTY</value>
+  </data>
+  <data name="&gt;&gt;lblQTY1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelQTY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="panelQTY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 118</value>
+  </data>
+  <data name="panelQTY.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelQTY.Name" xml:space="preserve">
+    <value>panelQTY</value>
+  </data>
+  <data name="&gt;&gt;panelQTY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelQTY.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelQTY.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panelTOTAL.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnTOTALReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="btnTOTALReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnTOTALReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 55</value>
+  </data>
+  <data name="btnTOTALReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 50</value>
+  </data>
+  <data name="btnTOTALReset.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnTOTALReset.Text" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="&gt;&gt;btnTOTALReset.Name" xml:space="preserve">
+    <value>btnTOTALReset</value>
+  </data>
+  <data name="&gt;&gt;btnTOTALReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTOTALReset.Parent" xml:space="preserve">
+    <value>panelTOTAL</value>
+  </data>
+  <data name="&gt;&gt;btnTOTALReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTOTAL1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 21.75pt, style=Bold</value>
+  </data>
+  <data name="lblTOTAL1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTOTAL1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 4</value>
+  </data>
+  <data name="lblTOTAL1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 40</value>
+  </data>
+  <data name="lblTOTAL1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblTOTAL1.Text" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="lblTOTAL1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL1.Name" xml:space="preserve">
+    <value>lblTOTAL1</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL1.Parent" xml:space="preserve">
+    <value>panelTOTAL</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblTOTAL2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblTOTAL2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTOTAL2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 53</value>
+  </data>
+  <data name="lblTOTAL2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 52</value>
+  </data>
+  <data name="lblTOTAL2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTOTAL2.Text" xml:space="preserve">
+    <value>99999999</value>
+  </data>
+  <data name="lblTOTAL2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL2.Name" xml:space="preserve">
+    <value>lblTOTAL2</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL2.Parent" xml:space="preserve">
+    <value>panelTOTAL</value>
+  </data>
+  <data name="&gt;&gt;lblTOTAL2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelTOTAL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 260</value>
+  </data>
+  <data name="panelTOTAL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 118</value>
+  </data>
+  <data name="panelTOTAL.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelTOTAL.Name" xml:space="preserve">
+    <value>panelTOTAL</value>
+  </data>
+  <data name="&gt;&gt;panelTOTAL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTOTAL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTOTAL.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 40</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>panelClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 475</value>
+  </data>
+  <data name="panelClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 52</value>
+  </data>
+  <data name="panelClose.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;panelClose.Name" xml:space="preserve">
+    <value>panelClose</value>
+  </data>
+  <data name="&gt;&gt;panelClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelClose.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelOPTIME.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="labelHOURMETER1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 20.25pt, style=Bold</value>
+  </data>
+  <data name="labelHOURMETER1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelHOURMETER1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 52</value>
+  </data>
+  <data name="labelHOURMETER1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 52</value>
+  </data>
+  <data name="labelHOURMETER1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelHOURMETER1.Text" xml:space="preserve">
+    <value>65536</value>
+  </data>
+  <data name="labelHOURMETER1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER1.Name" xml:space="preserve">
+    <value>labelHOURMETER1</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER1.Parent" xml:space="preserve">
+    <value>panelOPTIME</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelHOURMETER.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="labelHOURMETER.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelHOURMETER.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 62</value>
+  </data>
+  <data name="labelHOURMETER.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 29</value>
+  </data>
+  <data name="labelHOURMETER.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelHOURMETER.Text" xml:space="preserve">
+    <value>累積稼働時間</value>
+  </data>
+  <data name="labelHOURMETER.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER.Name" xml:space="preserve">
+    <value>labelHOURMETER</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER.Parent" xml:space="preserve">
+    <value>panelOPTIME</value>
+  </data>
+  <data name="&gt;&gt;labelHOURMETER.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnOPTIMEReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="btnOPTIMEReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnOPTIMEReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 51</value>
+  </data>
+  <data name="btnOPTIMEReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 50</value>
+  </data>
+  <data name="btnOPTIMEReset.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnOPTIMEReset.Text" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="&gt;&gt;btnOPTIMEReset.Name" xml:space="preserve">
+    <value>btnOPTIMEReset</value>
+  </data>
+  <data name="&gt;&gt;btnOPTIMEReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOPTIMEReset.Parent" xml:space="preserve">
+    <value>panelOPTIME</value>
+  </data>
+  <data name="&gt;&gt;btnOPTIMEReset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelOPTIME2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 20.25pt, style=Bold</value>
+  </data>
+  <data name="labelOPTIME2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelOPTIME2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 51</value>
+  </data>
+  <data name="labelOPTIME2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 52</value>
+  </data>
+  <data name="labelOPTIME2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelOPTIME2.Text" xml:space="preserve">
+    <value>655.36</value>
+  </data>
+  <data name="labelOPTIME2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME2.Name" xml:space="preserve">
+    <value>labelOPTIME2</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME2.Parent" xml:space="preserve">
+    <value>panelOPTIME</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelOPTIME1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 21.75pt, style=Bold</value>
+  </data>
+  <data name="labelOPTIME1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelOPTIME1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="labelOPTIME1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 40</value>
+  </data>
+  <data name="labelOPTIME1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelOPTIME1.Text" xml:space="preserve">
+    <value>稼働時間</value>
+  </data>
+  <data name="labelOPTIME1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME1.Name" xml:space="preserve">
+    <value>labelOPTIME1</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME1.Parent" xml:space="preserve">
+    <value>panelOPTIME</value>
+  </data>
+  <data name="&gt;&gt;labelOPTIME1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelOPTIME.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 541</value>
+  </data>
+  <data name="panelOPTIME.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 118</value>
+  </data>
+  <data name="panelOPTIME.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;panelOPTIME.Name" xml:space="preserve">
+    <value>panelOPTIME</value>
+  </data>
+  <data name="&gt;&gt;panelOPTIME.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelOPTIME.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelOPTIME.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>588, 668</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9pt</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>カウンタ</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>counterfrm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

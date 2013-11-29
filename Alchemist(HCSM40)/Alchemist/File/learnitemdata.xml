@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<learnitemdata>
+  <wiretype>
+    <item name="AV   " code="101" />
+    <item name="AVS  " code="103" />
+    <item name="AVSX " code="204" />
+    <item name="AVX  " code="205" />
+    <item name="AVFX " code="211" />
+    <item name="EB   " code="404" />
+    <item name="HDEB " code="406" />
+    <item name="KAV  " code="407" />
+    <item name="TVSX " code="537" />
+    <item name="EB-YZ" code="692" />
+  </wiretype>
+  <coresize>
+    <item name="   500" code="110" />
+    <item name="   550" code="111" />
+    <item name="   800" code="112" />
+    <item name="   900" code="113" />
+    <item name="  1000" code="114" />
+    <item name="  1500" code="115" />
+    <item name="  2000" code="116" />
+    <item name="  2200" code="117" />
+    <item name="  3000" code="118" />
+    <item name="  4000" code="119" />
+  </coresize>
+  <color1>
+    <item name="B " code="B0" />
+    <item name="BR" code="BR" />
+    <item name="CH" code="CH" />
+    <item name="DG" code="DG" />
+    <item name="G " code="G0" />
+    <item name="GR" code="GR" />
+    <item name="KH" code="KH" />
+    <item name="L " code="L0" />
+    <item name="LG" code="LG" />
+    <item name="O " code="O0" />
+    <item name="P " code="P0" />
+    <item name="R " code="R0" />
+    <item name="SB" code="SB" />
+    <item name="V " code="V0" />
+    <item name="W " code="W0" />
+    <item name="Y " code="Y0" />
+    <item name="LB" code="LB" />
+    <item name="PU" code="PU" />
+  </color1>
+  <color2>
+    <item name="   " code="00" />
+    <item name="*B " code="B0" />
+    <item name="*CH" code="CH" />
+    <item name="*BR" code="BR" />
+    <item name="*DG" code="DG" />
+    <item name="*G " code="G0" />
+    <item name="*GR" code="GR" />
+    <item name="*KH" code="KH" />
+    <item name="*L " code="L0" />
+    <item name="*LG" code="LG" />
+    <item name="*O " code="O0" />
+    <item name="*P " code="P0" />
+    <item name="*R " code="R0" />
+    <item name="*SB" code="SB" />
+    <item name="*V " code="V0" />
+    <item name="*W " code="W0" />
+    <item name="*Y " code="Y0" />
+    <item name="*LB" code="LB" />
+    <item name="*PU" code="PU" />
+  </color2>
+</learnitemdata>

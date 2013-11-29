@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TIMM_0101" xml:space="preserve">
+    <value>先端クランプ閉→搬送クランプ閉</value>
+  </data>
+  <data name="TIMM_0102" xml:space="preserve">
+    <value>カット閉(完了)→前後ストリップ位置</value>
+  </data>
+  <data name="TIMM_0103" xml:space="preserve">
+    <value>前後ストリップ位置→旋回ストリップST</value>
+  </data>
+  <data name="TIMM_0104" xml:space="preserve">
+    <value>ストリップ安定時間</value>
+  </data>
+  <data name="TIMM_0105" xml:space="preserve">
+    <value>ストリップ閉(完了)→前後ストリップ後退位置</value>
+  </data>
+  <data name="TIMM_0106" xml:space="preserve">
+    <value>前後.圧着後退位置→旋回.原位置</value>
+  </data>
+  <data name="TIMM_0107" xml:space="preserve">
+    <value>旋回.原位置→前後.原位置</value>
+  </data>
+  <data name="TIMM_0108" xml:space="preserve">
+    <value>前後.原位置→フィード開始</value>
+  </data>
+  <data name="TIMM_0109" xml:space="preserve">
+    <value>フィード終了→電線ガイド閉</value>
+  </data>
+  <data name="TIMM_010A" xml:space="preserve">
+    <value>バックフィード: 前後.原位置→バックフィード開始</value>
+  </data>
+  <data name="TIMM_010B" xml:space="preserve">
+    <value>バックフィード: バックフィード終了→フィード開始</value>
+  </data>
+  <data name="TIMM_010C" xml:space="preserve">
+    <value>旋回.圧着位置→バキュームOFF</value>
+  </data>
+  <data name="TIMM_010D" xml:space="preserve">
+    <value>ハーフ: 前後.ハーフ後退位置→旋回(前後).原位置</value>
+  </data>
+  <data name="TIMM_010E" xml:space="preserve">
+    <value>ハーフ: 旋回(前後).原位置→フィード開始</value>
+  </data>
+  <data name="TIMM_010F" xml:space="preserve">
+    <value>No1沈み上 → キャリアカットOFF</value>
+  </data>
+  <data name="TIMM_0110" xml:space="preserve">
+    <value>キャリアカットON → キャリアカットOFF</value>
+  </data>
+  <data name="TIMM_0111" xml:space="preserve">
+    <value>圧着退避: No1沈み上→旋回.圧着退避ST</value>
+  </data>
+  <data name="TIMM_0112" xml:space="preserve">
+    <value>圧着退避: 旋回.圧着退避ST→前後.圧着検出位置</value>
+  </data>
+  <data name="TIMM_0113" xml:space="preserve">
+    <value>判定終了後圧着:圧着開始待ち時間</value>
+  </data>
+  <data name="TIMM_0201" xml:space="preserve">
+    <value>搬送クランプ閉→カット閉</value>
+  </data>
+  <data name="TIMM_0202" xml:space="preserve">
+    <value>カット閉(完了)→前後.ストリップ位置</value>
+  </data>
+  <data name="TIMM_0203" xml:space="preserve">
+    <value>前後.ストリップ位置→搬送.ストリップST</value>
+  </data>
+  <data name="TIMM_0204" xml:space="preserve">
+    <value>ストリップ安定時間</value>
+  </data>
+  <data name="TIMM_0205" xml:space="preserve">
+    <value>ストリップ閉(完了)→前後.ストリップ後退位置</value>
+  </data>
+  <data name="TIMM_0206" xml:space="preserve">
+    <value>前後.ストリップ後退位置→搬送.圧着ST</value>
+  </data>
+  <data name="TIMM_0207" xml:space="preserve">
+    <value>搬送.持替ST→排出クランプ閉</value>
+  </data>
+  <data name="TIMM_0208" xml:space="preserve">
+    <value>搬送クランプ開→搬送.原位置</value>
+  </data>
+  <data name="TIMM_0209" xml:space="preserve">
+    <value>搬送.原位置→前後.原位置</value>
+  </data>
+  <data name="TIMM_020A" xml:space="preserve">
+    <value>搬送.圧着ST→バキュームOFF</value>
+  </data>
+  <data name="TIMM_020B" xml:space="preserve">
+    <value>ハーフ: 前後.ハーフ後退位置→搬送(前後).持替位置</value>
+  </data>
+  <data name="TIMM_020C" xml:space="preserve">
+    <value>ハーフ: 搬送(前後).持替位置→排出クランプ閉</value>
+  </data>
+  <data name="TIMM_020D" xml:space="preserve">
+    <value>No2沈み上→キャリアカットON</value>
+  </data>
+  <data name="TIMM_020E" xml:space="preserve">
+    <value>キャリアカットON→キャリアカットOFF</value>
+  </data>
+  <data name="TIMM_020F" xml:space="preserve">
+    <value>オーバートップ:No2沈み上→前後.先端持替位置</value>
+  </data>
+  <data name="TIMM_0210" xml:space="preserve">
+    <value>搬送.圧着ST→前後.先端持替位置(切替プラス)</value>
+  </data>
+  <data name="TIMM_0211" xml:space="preserve">
+    <value>搬送.圧着ST→圧着開始(切替プラス)</value>
+  </data>
+  <data name="TIMM_0212" xml:space="preserve">
+    <value>搬送.圧着ST→排出クランプ閉(切替プラス)</value>
+  </data>
+  <data name="TIMM_0213" xml:space="preserve">
+    <value>圧着退避: No2沈み上→搬送.圧着退避ST</value>
+  </data>
+  <data name="TIMM_0214" xml:space="preserve">
+    <value>判定終了後圧着: 圧着開始待ち時間</value>
+  </data>
+  <data name="TIMM_0215" xml:space="preserve">
+    <value>判定終了後圧着: 排出クランプ閉待ち時間</value>
+  </data>
+  <data name="TIMM_0216" xml:space="preserve">
+    <value>搬送.ストリップ検出準備ST→前後.ストリップ検出位置</value>
+  </data>
+  <data name="TIMM_0217" xml:space="preserve">
+    <value>前後.ストリップ検出位置→搬送.ストリップ検出ST</value>
+  </data>
+  <data name="TIMM_0301" xml:space="preserve">
+    <value>排出クランプ開→排出.持替位置</value>
+  </data>
+  <data name="TIMM_0302" xml:space="preserve">
+    <value>排出.持替位置→排出クランプ閉</value>
+  </data>
+  <data name="TIMM_0303" xml:space="preserve">
+    <value>排出クランプ閉→搬送クランプ開</value>
+  </data>
+  <data name="TIMM_0304" xml:space="preserve">
+    <value>搬送クランプ開→排出.排出位置</value>
+  </data>
+  <data name="TIMM_0305" xml:space="preserve">
+    <value>排出.排出位置→排出クランプ開</value>
+  </data>
+  <data name="TIMM_0306" xml:space="preserve">
+    <value>オーバートップ: 搬送クランプ開→排出.排出位置</value>
+  </data>
+  <data name="TIMM_0307" xml:space="preserve">
+    <value>エアー吹き1.開始待ち時間</value>
+  </data>
+  <data name="TIMM_0308" xml:space="preserve">
+    <value>エアー吹き1時間</value>
+  </data>
+  <data name="TIMM_0309" xml:space="preserve">
+    <value>エアー吹き2.開始待ち時間</value>
+  </data>
+  <data name="TIMM_030A" xml:space="preserve">
+    <value>エアー吹き2時間</value>
+  </data>
+  <data name="TIMM_0401" xml:space="preserve">
+    <value>旋回.圧着ST→前後.圧着位置</value>
+  </data>
+  <data name="TIMM_0402" xml:space="preserve">
+    <value>旋回.圧着ST→圧着開始</value>
+  </data>
+  <data name="TIMM_0403" xml:space="preserve">
+    <value>圧着開始→No1沈み下</value>
+  </data>
+  <data name="TIMM_0404" xml:space="preserve">
+    <value>圧着開始→No1沈み上</value>
+  </data>
+  <data name="TIMM_0405" xml:space="preserve">
+    <value>No1沈み上→前後.圧着検出位置</value>
+  </data>
+  <data name="TIMM_0406" xml:space="preserve">
+    <value>圧着開始→PFMトリガ</value>
+  </data>
+  <data name="TIMM_0507" xml:space="preserve">
+    <value>搬送.圧着ST→前後.圧着位置</value>
+  </data>
+  <data name="TIMM_0508" xml:space="preserve">
+    <value>搬送.圧着ST→圧着開始</value>
+  </data>
+  <data name="TIMM_0509" xml:space="preserve">
+    <value>圧着開始→No2沈み下</value>
+  </data>
+  <data name="TIMM_050A" xml:space="preserve">
+    <value>圧着開始→No2沈み上</value>
+  </data>
+  <data name="TIMM_050B" xml:space="preserve">
+    <value>No2沈み上→排出クランプ閉</value>
+  </data>
+  <data name="TIMM_050C" xml:space="preserve">
+    <value>圧着開始→PFMトリガ</value>
+  </data>
+  <data name="TIMM_0601" xml:space="preserve">
+    <value>前後.シール挿入開始位置→旋回.シール挿入ST</value>
+  </data>
+  <data name="TIMM_0602" xml:space="preserve">
+    <value>旋回.シール挿入ST→前後.シール挿入位置</value>
+  </data>
+  <data name="TIMM_0603" xml:space="preserve">
+    <value>前後.シール挿入位置→前後.シール挿入後退位置</value>
+  </data>
+  <data name="TIMM_0604" xml:space="preserve">
+    <value>前後.シール挿入後退位置→移動完了待ち</value>
+  </data>
+  <data name="TIMM_0605" xml:space="preserve">
+    <value>シールセット開始→前後.シール挿入開始位置</value>
+  </data>
+  <data name="TIMM_0606" xml:space="preserve">
+    <value>前後.シール挿入開始位置→旋回.ストリップST</value>
+  </data>
+  <data name="TIMM_0701" xml:space="preserve">
+    <value>前後.シール挿入開始位置→旋回.シール挿入ST</value>
+  </data>
+  <data name="TIMM_0702" xml:space="preserve">
+    <value>旋回.シール挿入ST→前後.シール挿入位置</value>
+  </data>
+  <data name="TIMM_0703" xml:space="preserve">
+    <value>前後.シール挿入位置→前後.シール挿入後退位置</value>
+  </data>
+  <data name="TIMM_0704" xml:space="preserve">
+    <value>前後.シール挿入後退位置→移動完了待ち</value>
+  </data>
+  <data name="TIMM_0705" xml:space="preserve">
+    <value>シールセット開始→前後.シール挿入開始位置</value>
+  </data>
+  <data name="TIMM_0706" xml:space="preserve">
+    <value>前後.シール挿入開始位置→旋回.ストリップST</value>
+  </data>
+</root>

@@ -1,0 +1,139 @@
+<memalloc>
+  <machine id="HCSM40 Rev.0.100"/>
+  <workid_type type="1">
+    <group code="1">
+      <workid id="0x0101" sortno="1" address="0x1005" double_word="0" value_factor="1" bank_store="1" min_limit="140" max_limit="99999" default_value="500" unit="mm" address_special="0" learn_key_code="2" comment=""/>
+      <workid id="0x0102" sortno="2" address="0x100E" double_word="0" value_factor="1" bank_store="1" min_limit="1" max_limit="4" default_value="1" unit="" address_special="0" learn_key_code="1" comment=""/>
+      <workid id="0x0103" sortno="3" address="0x100F" double_word="0" value_factor="1" bank_store="1" min_limit="1" max_limit="4" default_value="1" unit="" address_special="0" learn_key_code="1" comment=""/>
+    </group>
+    <group code="2">
+      <workid id="0x0201" sortno="4" address="0x1007" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="20" default_value="10" unit="mm" address_special="0" learn_key_code="3" comment=""/>
+      <workid id="0x0202" sortno="5" address="0x1008" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="16" default_value="0" unit="mm" address_special="0" learn_key_code="3" comment=""/>
+      <workid id="0x0203" sortno="6" address="0x100B" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="20" default_value="20" unit="mm" address_special="0" learn_key_code="1" comment=""/>
+      <workid id="0x0204" sortno="7" address="0x1011" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="3" default_value="0" unit="mm" address_special="0" learn_key_code="1" comment=""/>
+      <workid id="0x0205" sortno="8" address="0x100C" double_word="0" value_factor="1" bank_store="1" min_limit="100" max_limit="4500" default_value="4000" unit="rpm" address_special="0" learn_key_code="3" comment=""/>
+    </group>
+    <group code="3">
+      <workid id="0x0301" sortno="9" address="0x1009" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="20" default_value="10" unit="mm" address_special="0" learn_key_code="4" comment=""/>
+      <workid id="0x0302" sortno="10" address="0x100A" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="16" default_value="0" unit="mm" address_special="0" learn_key_code="4" comment=""/>
+      <workid id="0x0303" sortno="11" address="0x100B" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="20" default_value="20" unit="mm" address_special="0" learn_key_code="1" comment=""/>
+      <workid id="0x0304" sortno="12" address="0x1011" double_word="0" value_factor="100" bank_store="1" min_limit="0" max_limit="3" default_value="0" unit="mm" address_special="0" learn_key_code="1" comment=""/>
+      <workid id="0x0305" sortno="13" address="0x100D" double_word="0" value_factor="1" bank_store="1" min_limit="100" max_limit="4500" default_value="4000" unit="mm" address_special="0" learn_key_code="4" comment=""/>
+    </group>
+    <group code="4">
+      <workid id="0x0401" sortno="14" address="0x8001" double_word="1" value_factor="1" bank_store="0" min_limit="0" max_limit="99999999" default_value="0" unit="" address_special="0" learn_key_code="0" comment=""/>
+      <workid id="0x0402" sortno="15" address="0x8003" double_word="1" value_factor="1" bank_store="0" min_limit="0" max_limit="99999999" default_value="0" unit="" address_special="0" learn_key_code="0" comment=""/>
+      <workid id="0x0403" sortno="16" address="0x8005" double_word="1" value_factor="1" bank_store="0" min_limit="0" max_limit="99999999" default_value="0" unit="" address_special="0" learn_key_code="0" comment=""/>
+      <workid id="0x0404" sortno="17" address="0x1000" double_word="1" value_factor="1" bank_store="0" min_limit="0" max_limit="999999" default_value="100" unit="" address_special="0" learn_key_code="0" comment=""/>
+      <workid id="0x0405" sortno="18" address="0x1002" double_word="1" value_factor="1" bank_store="0" min_limit="0" max_limit="999999" default_value="100" unit="" address_special="0" learn_key_code="0" comment=""/>
+      <workid id="0x0406" sortno="19" address="0x801C" double_word="0" value_factor="1000" bank_store="0" min_limit="0" max_limit="99999" default_value="0" unit="sec" address_special="0" learn_key_code="0" comment=""/>
+    </group>
+    <group code="5">
+      <workid id="0x0501" sortno="20" address="0x101F" double_word="0" value_factor="10" bank_store="1" min_limit="0" max_limit="30" default_value="3" unit="sec" address_special="0" learn_key_code="0" comment=""/>
+    </group>
+    <group code="6">
+      <workid id="0x0601" sortno="23" address="0x1006" double_word="0" value_factor="10" bank_store="0" min_limit="-10" max_limit="10" default_value="0" unit="%" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0602" sortno="26" address="0x1006" double_word="0" value_factor="10" bank_store="0" min_limit="-10" max_limit="10" default_value="0" unit="%" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0603" sortno="29" address="0x1006" double_word="0" value_factor="10" bank_store="0" min_limit="-10" max_limit="10" default_value="0" unit="%" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0604" sortno="21" address="0x1020" double_word="0" value_factor="10" bank_store="1" min_limit="1" max_limit="10" default_value="3" unit="m/s" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0605" sortno="24" address="0x1020" double_word="0" value_factor="10" bank_store="1" min_limit="1" max_limit="10" default_value="3" unit="m/s" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0606" sortno="27" address="0x1020" double_word="0" value_factor="10" bank_store="1" min_limit="1" max_limit="10" default_value="3" unit="m/s" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0607" sortno="22" address="0x1021" double_word="0" value_factor="1" bank_store="1" min_limit="20" max_limit="500" default_value="120" unit="msec" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0608" sortno="25" address="0x1021" double_word="0" value_factor="1" bank_store="1" min_limit="20" max_limit="500" default_value="120" unit="msec" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x0609" sortno="28" address="0x1021" double_word="0" value_factor="1" bank_store="1" min_limit="20" max_limit="500" default_value="150" unit="msec" address_special="1" learn_key_code="1" comment=""/>
+      <workid id="0x060A" sortno="30" address="0x0000" double_word="0" value_factor="1" bank_store="1" min_limit="40" max_limit="20000" default_value="250" unit="mm" address_special="2" learn_key_code="0" comment=""/>
+      <workid id="0x060B" sortno="31" address="0x0000" double_word="0" value_factor="1" bank_store="1" min_limit="40" max_limit="20000" default_value="600" unit="mm" address_special="2" learn_key_code="0" comment=""/>
+    </group>
+    <group code="12">
+      <workid id="0x0C01" sortno="32" address="0x0000" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="4" default_value="0" unit="" address_special="0" learn_key_code="0" comment=""/>
+      <workid id="0x0C02" sortno="33" address="0x0000" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="99999" default_value="0" unit="" address_special="0" learn_key_code="0" comment=""/>
+      <workid id="0x0C03" sortno="34" address="0x0000" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="99999" default_value="0" unit="" address_special="0" learn_key_code="0" comment=""/>
+    </group>
+  </workid_type>
+  <workid_type type="2">
+    <group code="1">
+      <workid id="0x0101" sortno="1" address="0x3006" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="999" default_value="150" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0102" sortno="2" address="0x3007" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="999" default_value="50" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0103" sortno="3" address="0x3001" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1" default_value="0" unit="" address_special="0" comment=""/>
+      <workid id="0x0104" sortno="4" address="0x3003" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="50" default_value="3" unit="min" address_special="0" comment=""/>
+      <workid id="0x0105" sortno="5" address="0x3008" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="999" default_value="900" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0106" sortno="6" address="0x3009" double_word="0" value_factor="100" bank_store="0" min_limit="10" max_limit="20" default_value="12" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0107" sortno="7" address="0x300A" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="999999" default_value="3000" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0108" sortno="8" address="0x300B" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1" default_value="0" unit="" address_special="0" comment=""/>
+    </group>
+    <group code="2">
+      <workid id="0x0201" sortno="9" address="0x3014" double_word="0" value_factor="10" bank_store="0" min_limit="-10" max_limit="10" default_value="-1" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0202" sortno="10" address="0x3015" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="5000" default_value="480" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0203" sortno="11" address="0x3016" double_word="0" value_factor="10" bank_store="0" min_limit="100" max_limit="5000" default_value="140" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0204" sortno="12" address="0x3017" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="5000" default_value="160" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0205" sortno="13" address="0x3018" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="5000" default_value="120" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0206" sortno="14" address="0x3019" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="5000" default_value="275" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0207" sortno="15" address="0x1019" double_word="0" value_factor="10" bank_store="0" min_limit="1" max_limit="3000" default_value="1.1" unit="m/sec" address_special="0" comment=""/>
+      <workid id="0x0208" sortno="16" address="0x101A" double_word="0" value_factor="1" bank_store="0" min_limit="20" max_limit="1000" default_value="300" unit="msec" address_special="0" comment=""/>
+      <workid id="0x0209" sortno="17" address="0x301A" double_word="0" value_factor="1" bank_store="0" min_limit="-20" max_limit="20" default_value="0" unit="mm" address_special="0" comment=""/>
+    </group>
+    <group code="3">
+      <workid id="0x0301" sortno="18" address="0x301E" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="115" default_value="0" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0302" sortno="19" address="0x3021" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="115" default_value="59.5" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0303" sortno="20" address="0x3022" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="115" default_value="49.5" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0304" sortno="21" address="0x3023" double_word="0" value_factor="100" bank_store="0" min_limit="2" max_limit="25" default_value="10" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0305" sortno="22" address="0x3024" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="115" default_value="112" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0306" sortno="23" address="0x3025" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="115" default_value="0" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0307" sortno="24" address="0x301F" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="5000" default_value="4000" unit="rpm" address_special="0" comment=""/>
+      <workid id="0x0308" sortno="25" address="0x3020" double_word="0" value_factor="1" bank_store="0" min_limit="10" max_limit="500" default_value="100" unit="msec" address_special="0" comment=""/>
+      <workid id="0x0309" sortno="26" address="0x3028" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="80" default_value="0" unit="mm" address_special="0" comment=""/>
+      <workid id="0x030A" sortno="27" address="0x302B" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="80" default_value="49.5" unit="mm" address_special="0" comment=""/>
+      <workid id="0x030B" sortno="28" address="0x302C" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="80" default_value="36.8" unit="mm" address_special="0" comment=""/>
+      <workid id="0x030C" sortno="29" address="0x302D" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="80" default_value="-3" unit="mm" address_special="0" comment=""/>
+      <workid id="0x030D" sortno="30" address="0x302E" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="80" default_value="77" unit="mm" address_special="0" comment=""/>
+      <workid id="0x030E" sortno="31" address="0x302F" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="80" default_value="0" unit="mm" address_special="0" comment=""/>
+      <workid id="0x030F" sortno="32" address="0x3029" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="5000" default_value="4000" unit="rpm" address_special="0" comment=""/>
+      <workid id="0x0310" sortno="33" address="0x302A" double_word="0" value_factor="1" bank_store="0" min_limit="10" max_limit="500" default_value="100" unit="msec" address_special="0" comment=""/>
+    </group>
+    <group code="4">
+      <workid id="0x0401" sortno="34" address="0x3032" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="-2.5" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0402" sortno="35" address="0x3035" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="41" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0403" sortno="36" address="0x3036" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="56.75" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0404" sortno="37" address="0x3033" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="4500" default_value="4000" unit="rpm" address_special="0" comment=""/>
+      <workid id="0x0405" sortno="38" address="0x3034" double_word="0" value_factor="1" bank_store="0" min_limit="10" max_limit="200" default_value="100" unit="msec" address_special="0" comment=""/>
+      <workid id="0x0406" sortno="39" address="0x303C" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="-4.5" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0407" sortno="40" address="0x303F" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="41" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0408" sortno="41" address="0x3040" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="56.75" unit="mm" address_special="0" comment=""/>
+      <workid id="0x0409" sortno="42" address="0x303D" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="4500" default_value="4000" unit="rpm" address_special="0" comment=""/>
+      <workid id="0x040A" sortno="43" address="0x303E" double_word="0" value_factor="1" bank_store="0" min_limit="10" max_limit="200" default_value="100" unit="msec" address_special="0" comment=""/>
+      <workid id="0x040B" sortno="44" address="0x3046" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="30" unit="mm" address_special="0" comment=""/>
+      <workid id="0x040C" sortno="45" address="0x3047" double_word="0" value_factor="100" bank_store="0" min_limit="-5" max_limit="60" default_value="1.5" unit="mm" address_special="0" comment=""/>
+    </group>
+  </workid_type>
+  <workid_type type="3">
+    <group code="1">
+      <workid id="0x0101" sortno="1" address="0x2000" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="150" unit="step" address_special="0" comment=""/>
+      <workid id="0x0102" sortno="2" address="0x2001" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x0103" sortno="3" address="0x2002" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x0104" sortno="4" address="0x2003" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="30" unit="step" address_special="0" comment=""/>
+      <workid id="0x0105" sortno="5" address="0x2004" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x0106" sortno="6" address="0x2005" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="120" unit="step" address_special="0" comment=""/>
+      <workid id="0x0107" sortno="7" address="0x2006" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="100" unit="step" address_special="0" comment=""/>
+      <workid id="0x0108" sortno="8" address="0x2007" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x0109" sortno="9" address="0x2008" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x010A" sortno="10" address="0x2009" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x010B" sortno="11" address="0x200A" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x010C" sortno="12" address="0x200B" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x010D" sortno="13" address="0x200C" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x010E" sortno="14" address="0x200D" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x010F" sortno="15" address="0x200E" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x0110" sortno="16" address="0x2028" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x0111" sortno="17" address="0x2029" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x0112" sortno="18" address="0x202A" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x0113" sortno="19" address="0x202B" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+    </group>
+    <group code="2">
+      <workid id="0x0201" sortno="20" address="0x201E" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x0202" sortno="21" address="0x201F" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="50" unit="step" address_special="0" comment=""/>
+      <workid id="0x0203" sortno="22" address="0x2020" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="0" unit="step" address_special="0" comment=""/>
+      <workid id="0x0204" sortno="23" address="0x2021" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="350" unit="step" address_special="0" comment=""/>
+      <workid id="0x0205" sortno="24" address="0x2022" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="700" unit="step" address_special="0" comment=""/>
+      <workid id="0x0206" sortno="25" address="0x2023" double_word="0" value_factor="1" bank_store="0" min_limit="0" max_limit="1000" default_value="200" unit="step" address_special="0" comment=""/>
+    </group>
+  </workid_type>
+</memalloc>
