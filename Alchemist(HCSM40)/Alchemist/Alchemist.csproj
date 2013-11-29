@@ -1032,12 +1032,6 @@
     <None Include="Resources\splushScreen.bmp" />
     <None Include="Resources\mainIcon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\omoikane\omoikane\omoikane.csproj">
-      <Project>{0E4DF1FA-B0D6-4DE5-AB66-5AB28BF34D45}</Project>
-      <Name>omoikane</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
