@@ -1,5 +1,4 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+﻿<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
   <!-- address_string型 -->
   <xsd:simpleType name='address_string'>
     <xsd:restriction base='xsd:string'>
@@ -10,6 +9,15 @@
   <!-- value_number型 -->
   <xsd:simpleType name='value_number'>
     <xsd:restriction base='xsd:double' />
+  </xsd:simpleType>
+
+  <!-- workid_type -->
+  <xsd:simpleType name='type_number'>
+    <xsd:restriction base='xsd:string'>
+      <xsd:enumeration value='3' />
+      <xsd:enumeration value='4' />
+      <xsd:enumeration value='5' />
+    </xsd:restriction>
   </xsd:simpleType>
 
   <!-- key_string 型 -->
@@ -26,6 +34,8 @@
       <xsd:enumeration value='3' />
       <xsd:enumeration value='4' />
       <xsd:enumeration value='5' />
+      <xsd:enumeration value='6' />
+      <xsd:enumeration value='7' />
     </xsd:restriction>
   </xsd:simpleType>
 
@@ -50,8 +60,19 @@
 
   <xsd:complexType name='learndata_type'>
     <xsd:sequence>
-      <xsd:element minOccurs='0' maxOccurs='unbounded' name='searchkey' type='searchkey_type' />
+      <xsd:element minOccurs='1' maxOccurs='unbounded' name='searchkey' type='searchkey_type' />
     </xsd:sequence>
+    <!-- 選択内容属性定義 -->
+    <xsd:attribute name='key0' use='required' type='key_string' />
+    <xsd:attribute name='key1' use='required' type='key_string' />
+    <xsd:attribute name='key2' use='required' type='key_string' />
+    <xsd:attribute name='key3' use='required' type='key_string' />
+    <xsd:attribute name='key4' use='required' type='key_string' />
+    <xsd:attribute name='key5' use='required' type='key_string' />
+    <xsd:attribute name='key6' use='required' type='key_string' />
+    <xsd:attribute name='key7' use='required' type='key_string' />
+    <xsd:attribute name='key8' use='required' type='key_string' />
+    <xsd:attribute name='key9' use='required' type='key_string' />
   </xsd:complexType>
 
   <!-- searchkey要素定義 -->
@@ -80,5 +101,7 @@
 
     <xsd:attribute name='workid' use ='required' type='address_string' />
     <xsd:attribute name='value' use='required' type='value_number' />
+    <xsd:attribute name='type' use='required' type='type_number' />
+
   </xsd:complexType>
 </xsd:schema>

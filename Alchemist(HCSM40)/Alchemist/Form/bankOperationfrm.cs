@@ -43,8 +43,8 @@ namespace Alchemist
             Utility.ShowErrorCode(result);
 
             // CFMの記録を停止する
-            mainfrm.CFMRecordStop(omoikane.SystemConstants.CHANNEL_NO1);
-            mainfrm.CFMRecordStop(omoikane.SystemConstants.CHANNEL_NO2);
+            //mainfrm.CFMRecordStop(omoikane.SystemConstants.CHANNEL_NO1);
+            //mainfrm.CFMRecordStop(omoikane.SystemConstants.CHANNEL_NO2);
 
             // フォームを閉じる
             Visible = false;
@@ -54,6 +54,9 @@ namespace Alchemist
         private void button1_Click(object sender, EventArgs e)
         {
             selectBank();
+
+            // 選択中の学習キーをクリア
+            learnItemKeysClear();
         }
 
         // コピーボタン押下時の処理
@@ -171,6 +174,20 @@ namespace Alchemist
         private void lblNowBankNo2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        /// <summary>
+        /// bank選択時、学習データの選択中をキーをクリアする
+        /// </summary>
+        private void learnItemKeysClear()
+        {
+            string[] itemKeys = new string[10];
+            for (int i = 0; i < itemKeys.Length; i++)
+            {
+                itemKeys[i] = "";
+            }
+            // 空のデータで保存
+            int result = mainfrm.LearnItemKeysSave(itemKeys);
         }
     }
 }

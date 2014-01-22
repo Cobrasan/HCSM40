@@ -90,12 +90,30 @@ namespace Alchemist
 
                 // bankno
                 int bankno = 0;
-                Program.DataController.BankNoRead(ref bankno);
-                BankDataStruct[] bankdataStruct = new BankDataStruct[0];
-                Program.DataController.BankDataRead(bankno, ref bankdataStruct);
-                bankDataQueue = bankdataStruct.Length;
 
-                workDataQueue = bankdataStruct.Length;
+                // 学習データ項目キーを取得
+                int workmode = SystemConstants.WORKMODE_BANK;
+                string[] itemkeys = new string[10];
+                if (Program.DataController.LearnItemKeysRead(ref itemkeys) == SystemConstants.DCPF_SUCCESS)
+                {
+                    workmode = SystemConstants.WORKMODE_LEARN;
+                }
+
+                if (workmode == SystemConstants.WORKMODE_LEARN)
+                {
+                    LearnDataStruct[] learndataStruct = new LearnDataStruct[0];
+                    Program.DataController.LearnDataRead(itemkeys, ref learndataStruct);
+                    bankDataQueue = learndataStruct.Length;
+                    workDataQueue = learndataStruct.Length;
+                }
+                else
+                {
+                    Program.DataController.BankNoRead(ref bankno);
+                    BankDataStruct[] bankdataStruct = new BankDataStruct[0];
+                    Program.DataController.BankDataRead(bankno, ref bankdataStruct);
+                    bankDataQueue = bankdataStruct.Length;
+                    workDataQueue = bankdataStruct.Length;
+                }
 
                 //フォーマット済みの場合
                 if (formatType == SystemConstants.FORMAT_DONE)
@@ -123,9 +141,18 @@ namespace Alchemist
                     Program.DataController.WorkDataRead();
                     waitForQueue(true, Phase.WorkdataReading);
 
-                    // バンクデータの送信
-                    mainfrm.BankDataLoad(bankno);
-                    waitForQueue(true, Phase.BankWriting);
+                    if (workmode == SystemConstants.WORKMODE_LEARN)
+                    {
+                        // 学習データ送信
+                        mainfrm.LearnDataLoad(itemkeys);
+                        waitForQueue(true, Phase.BankWriting);
+                    }
+                    else
+                    {
+                        // バンクデータの送信
+                        mainfrm.BankDataLoad(bankno);
+                        waitForQueue(true, Phase.BankWriting);
+                    }
 
                 }
                 // フォーマット済みでない場合
@@ -169,16 +196,34 @@ namespace Alchemist
                     Program.DataController.WorkDataRead();
                     waitForQueue(true, Phase.WorkdataReading);
 
-                    // バンクデータの送信
-                    mainfrm.BankDataLoad(bankno);
-                    waitForQueue(true, Phase.BankWriting);
+                    if (workmode == SystemConstants.WORKMODE_LEARN)
+                    {
+                        // 学習データ送信
+                        mainfrm.LearnDataLoad(itemkeys);
+                        waitForQueue(true, Phase.BankWriting);
+                    }
+                    else
+                    {
+                        // バンクデータの送信
+                        mainfrm.BankDataLoad(bankno);
+                        waitForQueue(true, Phase.BankWriting);
+                    }
 
                     // フォーマット完了を書き込みます。
                     Program.DataController.FormatWrite();
                 }
 
-                // 加工値、補正値を保存する
-                mainfrm.BankDataSave(bankno);
+                if (workmode == SystemConstants.WORKMODE_LEARN)
+                {
+                    // 学習データを保存する。
+                    mainfrm.LearnDataSave(itemkeys);
+                }
+                else
+                {
+                    // バンクデータを保存する。
+                    mainfrm.BankDataSave(bankno);
+                }
+                // 補正値を保存する
                 Program.DataController.CorrectDataSave();
             }
             catch (TimeoutException)

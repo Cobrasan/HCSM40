@@ -40,6 +40,7 @@ namespace Alchemist
         public BoolDelegate RelatedDelegate;
         public int Address;
         public int BankStore;
+        public int SearchType;
         public int DefaultMode;
     };
 
@@ -66,7 +67,8 @@ namespace Alchemist
 
         // ボタン動作設定登録関数
         private void Add(int WorkID, BoolDelegate Action, int Digit, BoolDelegate OnOffCheck,
-            BoolDelegate OffOnCheck, BoolDelegate RelatedDelegate, int Address, int BankStore, int DefaultMode = SystemConstants.BTN_OFF)
+            BoolDelegate OffOnCheck, BoolDelegate RelatedDelegate, int Address, int BankStore, 
+            int SearchType = SystemConstants.DB_GROUP_SEARCH_TYPE_BTN, int DefaultMode = SystemConstants.BTN_OFF)
         {
             ButtonActionStruct actionStruct = new ButtonActionStruct();
             actionStruct.WorkID = WorkID;
@@ -77,6 +79,7 @@ namespace Alchemist
             actionStruct.Digit = Digit;
             actionStruct.Address = Address;
             actionStruct.BankStore = BankStore;
+            actionStruct.SearchType = SearchType;
             actionStruct.DefaultMode = DefaultMode;
 
             map.Add(
@@ -377,6 +380,25 @@ namespace Alchemist
                         }
                     }
                 }
+
+                // 学習データに保存する
+                if (actionStruct.SearchType != SystemConstants.DB_GROUP_SEARCH_TYPE_BTN && (Program.DataController.GetWorkMode() == SystemConstants.WORKMODE_LEARN))
+                {
+                    ret = dataController.LearnDataSave();
+                    if (ret != SystemConstants.DCPF_SUCCESS)
+                    {
+                        // 関連動作の場合
+                        if (!execRelated)
+                        {
+                            WritePushBtnException.ThrowException(ret);
+                        }
+                        else
+                        {
+                            return ret;
+                        }
+                    }
+                }
+
             }
 
             return SystemConstants.DCPF_SUCCESS;

@@ -115,6 +115,19 @@ namespace Alchemist
             comboColor1.Items.AddRange(wireColor1);
             comboColor2.Items.AddRange(wireColor2);
             #endregion
+
+            // 選択済みの情報を表示する
+            string[] itemkeys = new string[10];
+            if (Program.DataController.LearnItemKeysRead(ref itemkeys) == SystemConstants.DCPF_SUCCESS)
+            {
+                comboWireType.Text = itemkeys[0];
+                comboCoreSize.Text = itemkeys[1];
+                comboColor1.Text = itemkeys[2];
+                comboColor2.Text = itemkeys[3];
+                textWireLength.Text = itemkeys[4];
+                textStripLength1.Text = itemkeys[5];
+                textStripLength2.Text = itemkeys[6];
+            }
         }
 
         /// <summary>
@@ -157,6 +170,10 @@ namespace Alchemist
 
             // 学習データをセーブする
             result = mainfrm.LearnDataSave(itemKeys);
+
+            // 学習データのキーを保存する
+            result = mainfrm.LearnItemKeysSave(itemKeys);
+
 #if OMOIKANE
             // CFM保存を開始する
             mainfrm.CFMRecord(itemKeys);

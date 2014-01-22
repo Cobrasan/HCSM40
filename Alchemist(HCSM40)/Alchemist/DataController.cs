@@ -118,16 +118,15 @@ namespace Alchemist
                 return SystemConstants.ERR_CORRECT_FILE_ERROR;
             }
 
-            // 学習データ項目ロード
+            // 学習データアイテムリストロード
             try
             {
                 learnItemDataStorage.Load();
             }
             catch
             {
-                return SystemConstants.ERR_LSPF_FILE_ERROR;
+                return SystemConstants.ERR_LIPF_FILE_ERROR;
             }
-
 
             // 初期化設定
             machineConnector.Initialize();
@@ -1807,6 +1806,13 @@ namespace Alchemist
                 return result;
             }
 
+            // 切断長の補完（学習データがない場合入力したデータへ初期値を置き換え）
+            if(!learnDataStorage.IsIncludeWireLength(LearnData))
+            {
+                double wireLen = learnDataStorage.ConvKeytoWireLength(ItemKeys);
+                addLearnData(SystemConstants.WORKMEM_TYPE_WORKDATA, SystemConstants.WIRE_LENGTH1, wireLen, ref LearnData);                
+            }
+
             // ストリップ1の補完を行う
             if (!learnDataStorage.IsIncludeStripLength(SystemConstants.DB_GROUP_WORKSIDE1, LearnData))
             {
@@ -2074,5 +2080,48 @@ namespace Alchemist
             return learnItemDataStorage.DeleteItem(Name, SystemConstants.LEARN_ITEM_COLOR2);
         }
 
+        /// <summary>
+        /// 現在の選択されている学習データ項目キーを取得する
+        /// </summary>
+        /// <param name="ItemKeys"></param>
+        /// <returns></returns>
+        public int LearnItemKeysRead(ref string[] ItemKeys)
+        {
+            int result = learnDataStorage.GetItemKeys(ref ItemKeys);
+
+            // 正常に処理が行われた場合
+            if (result == SystemConstants.LSPF_SUCCESS)
+            {
+                // DCPF_SUCCESSを返します
+                return SystemConstants.DCPF_SUCCESS;
+            }
+            else
+            {
+                // LSPF_SUCCESS以外を受取った場合、そのコードを返します
+                return result;
+            }
+        }
+
+        /// <summary>
+        /// 現在の選択されている学習データ項目キーをファイルに保存
+        /// </summary>
+        /// <param name="ItemKeys"></param>
+        /// <returns></returns>
+        public int LearnItemKeysWrite(string[] ItemKeys)
+        {
+            int result = learnDataStorage.WriteItemKeys(ItemKeys);
+
+            // 正常に処理が行われた場合
+            if (result == SystemConstants.LSPF_SUCCESS)
+            {
+                // DCPF_SUCCESSを返します
+                return SystemConstants.DCPF_SUCCESS;
+            }
+            else
+            {
+                // BSPF_SUCCESS以外を受取った場合、そのコードを返します
+                return result;
+            }
+        }
     }
 }

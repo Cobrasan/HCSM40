@@ -29,6 +29,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox1));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.labelOptions = new System.Windows.Forms.Label();
             this.labelMachineVersion = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.labelProductName = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@
             this.labelCompanyName = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
-            this.labelOptions = new System.Windows.Forms.Label();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,18 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(539, 303);
             this.tableLayoutPanel.TabIndex = 0;
+            // 
+            // labelOptions
+            // 
+            this.labelOptions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelOptions.Location = new System.Drawing.Point(145, 120);
+            this.labelOptions.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelOptions.MaximumSize = new System.Drawing.Size(0, 16);
+            this.labelOptions.Name = "labelOptions";
+            this.labelOptions.Size = new System.Drawing.Size(391, 16);
+            this.labelOptions.TabIndex = 26;
+            this.labelOptions.Text = "Option";
+            this.labelOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelMachineVersion
             // 
@@ -167,18 +179,6 @@
             this.okButton.TabIndex = 24;
             this.okButton.Text = "OK(&O)";
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
-            // 
-            // labelOptions
-            // 
-            this.labelOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelOptions.Location = new System.Drawing.Point(145, 120);
-            this.labelOptions.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.labelOptions.MaximumSize = new System.Drawing.Size(0, 16);
-            this.labelOptions.Name = "labelOptions";
-            this.labelOptions.Size = new System.Drawing.Size(391, 16);
-            this.labelOptions.TabIndex = 26;
-            this.labelOptions.Text = "Option";
-            this.labelOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AboutBox1
             // 

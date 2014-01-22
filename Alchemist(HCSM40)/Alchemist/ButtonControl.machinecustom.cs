@@ -38,10 +38,11 @@ namespace Alchemist
             
             // 加工モード4
             Add(SystemConstants.LOT_INTERVAL1_BTN, valueSetAction, 1, null, null, null, SystemConstants.ADDR_LOT_INTERVAL1, SystemConstants.BTN_BANK_UNSAVED);				            // 自動復帰
-            Add(SystemConstants.DOUBLE_MOTION_BTN, valueSetAction, 1, null, null, null, SystemConstants.ADDR_DOUBLE_MOTION, SystemConstants.BTN_BANK_SAVED);				            // 2段動作
+            Add(SystemConstants.DOUBLE_MOTION_BTN, valueSetAction, 1, null, null, null, SystemConstants.ADDR_DOUBLE_MOTION, SystemConstants.BTN_BANK_SAVED, SystemConstants.DB_GROUP_SEARCH_TYPE_WIRE1);			// 2段動作
+            Add(SystemConstants.OUTPUT_BTN, valueSetAction, 1, null, null, null, SystemConstants.ADDR_OUTPUT, SystemConstants.BTN_BANK_SAVED, SystemConstants.DB_GROUP_SEARCH_TYPE_WIRE1);				            // 外部出力
 
             // 段取り
-            Add(SystemConstants.LOAD1_BTN, valueSetAction, 1, null, checkFreeMode_LoadOn, autoOffAction, SystemConstants.ADDR_LOAD1, SystemConstants.BTN_BANK_UNSAVED);					                // 電線ロード
+            Add(SystemConstants.LOAD1_BTN, valueSetAction, 1, null, checkFreeMode_LoadOn, autoOffAction, SystemConstants.ADDR_LOAD1, SystemConstants.BTN_BANK_UNSAVED);				    // 電線ロード
             Add(SystemConstants.LOAD1_STATUS, bitControlAction, 7, null, null, readonlyAction, SystemConstants.ADDR_MACHINE_STATUS, SystemConstants.BTN_BANK_UNSAVED);	                // 電線ロード状態
             
             // 操作

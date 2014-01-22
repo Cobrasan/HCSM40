@@ -1,5 +1,5 @@
 <memalloc>
-	<machine id="HCSM40 Rev.0.100"/>
+	<machine id="HCSM40 Rev.0.101"/>
 	<workid_type type="1">
 		<group code="1">
 			<workid id="0x0101" sortno="1" address="0x1005" double_word="0" value_factor="1" bank_store="1" min_limit="140" max_limit="99999" default_value="500" unit="mm" address_special="0" learn_key_code="2" comment=""/>

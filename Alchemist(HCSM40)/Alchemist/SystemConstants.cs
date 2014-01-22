@@ -146,6 +146,7 @@ namespace Alchemist
         // 加工モード4            
         public const int LOT_INTERVAL1_BTN = 0x0601;            /* 自動復帰 */
         public const int DOUBLE_MOTION_BTN = 0x0602;            /* ２段動作 */
+        public const int OUTPUT_BTN = 0x0603;                   /* 外部出力 */
 
         // 段取り            
         public const int LOAD1_BTN = 0x0701;                    /* 電線ロード */
@@ -527,6 +528,7 @@ namespace Alchemist
         public const int ADDR_WORK_PROCESS2 = 0x0003;               /* 2側加工モード */
         public const int ADDR_LOT_INTERVAL1 = 0x000B;               /* 自動復帰 */
         public const int ADDR_DOUBLE_MOTION = 0x0023;               /* 2段ストリップ動作 */
+        public const int ADDR_OUTPUT = 0x000C;                      /* 外部出力 */
         public const int ADDR_LOAD1 = 0x000E;                       /* 電線ロード */
         public const int ADDR_MACHINE_START1 = 0x0010;              /* スタート */
         public const int ADDR_MACHINE_STOP1 = 0x0011;               /* ストップ */
@@ -628,6 +630,7 @@ namespace Alchemist
 
         #region 表示メッセージ定数
         public const int STAT_DSP_MSG_DOUBLEMODE1 = 0x001E;
+        public const int STAT_DSP_MSG_OUTPUT1 = 0x001F;
         #endregion
 
         #endregion

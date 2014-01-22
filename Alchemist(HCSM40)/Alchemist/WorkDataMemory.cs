@@ -300,7 +300,7 @@ namespace Alchemist
                     }
                     catch
                     {
-                        btnBankStore.BankStore = SystemConstants.BTN_BANK_SAVED;
+                        btnBankStore.BankStore = SystemConstants.BTN_BANK_UNSAVED;
                     }
 
                     if (btnBankStore.BankStore == SystemConstants.BTN_BANK_SAVED)
@@ -462,6 +462,32 @@ namespace Alchemist
                 }
                 else if (learndata.Type == SystemConstants.WORKMEM_TYPE_WORKBTN)
                 {
+                    // ボタンIDの学習データ保存対象を取得
+                    ButtonActionStruct btnLearnStore = new ButtonActionStruct();
+
+                    try
+                    {
+                        btnLearnStore = buttonControl.Get(learndata.WorkID);
+                    }
+                    catch
+                    {
+                        btnLearnStore.SearchType = SystemConstants.DB_GROUP_SEARCH_TYPE_BTN;
+                    }
+
+                    if(btnLearnStore.SearchType != SystemConstants.DB_GROUP_SEARCH_TYPE_BTN)
+                    {
+                        // 配列の要素を１つ増やす
+                        Array.Resize(ref LearnData, LearnData.Length + 1);
+
+                        // LearnDataにデータを追加
+                        LearnData[i].Type = learndata.Type;
+                        LearnData[i].SearchType = btnLearnStore.SearchType;
+                        LearnData[i].ID = learndata.WorkID;
+                        LearnData[i].value = learndata.Value;
+                        i++;
+                    }
+
+/*
                     // 動作処理ボタンの場合
                     if (LearnDataStorage.IsLearnedModeBtn(learndata.WorkID))
                     {
@@ -475,6 +501,7 @@ namespace Alchemist
                         LearnData[i].value = learndata.Value;
                         i++;
                     }
+ */
                 }
             }
 

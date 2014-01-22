@@ -129,4 +129,10 @@
   <data name="lblSTRIP.Text" xml:space="preserve">
     <value>剥皮</value>
   </data>
+  <data name="btnOUTPUT.Text" xml:space="preserve">
+    <value>外部输出</value>
+  </data>
+  <data name="lblOTHER.Text" xml:space="preserve">
+    <value>其他</value>
+  </data>
 </root>

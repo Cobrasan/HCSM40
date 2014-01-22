@@ -880,6 +880,19 @@ namespace Alchemist
 
         #endregion
 
+        /// <summary>
+        /// 学習データキーの保存
+        /// </summary>
+        /// <param name="ItemKeys"></param>
+        /// <returns></returns>
+        static public int LearnItemKeysSave(string[] ItemKeys)
+        {
+            int ret = Program.DataController.LearnItemKeysWrite(ItemKeys);
+
+            Utility.ShowErrorCode(ret);
+            return ret;
+        }
+
         #region CFM用関数
 
         static public void CFMRecord(string[] ItemKeys)

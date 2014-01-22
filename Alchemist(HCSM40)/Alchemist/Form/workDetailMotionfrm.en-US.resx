@@ -129,4 +129,10 @@
   <data name="lblSTRIP.Text" xml:space="preserve">
     <value>Strip</value>
   </data>
+  <data name="btnOUTPUT.Text" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="lblOTHER.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
 </root>

@@ -34,8 +34,12 @@
             this.lblSTRIP = new System.Windows.Forms.Label();
             this.panelClose = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.panelOTHER = new System.Windows.Forms.Panel();
+            this.btnOUTPUT = new System.Windows.Forms.Button();
+            this.lblOTHER = new System.Windows.Forms.Label();
             this.panelFEED.SuspendLayout();
             this.panelClose.SuspendLayout();
+            this.panelOTHER.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelFEED
@@ -78,11 +82,36 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // panelOTHER
+            // 
+            this.panelOTHER.BackColor = System.Drawing.Color.Black;
+            this.panelOTHER.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelOTHER.Controls.Add(this.btnOUTPUT);
+            this.panelOTHER.Controls.Add(this.lblOTHER);
+            this.panelOTHER.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panelOTHER, "panelOTHER");
+            this.panelOTHER.Name = "panelOTHER";
+            // 
+            // btnOUTPUT
+            // 
+            this.btnOUTPUT.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.btnOUTPUT, "btnOUTPUT");
+            this.btnOUTPUT.ForeColor = System.Drawing.Color.Black;
+            this.btnOUTPUT.Name = "btnOUTPUT";
+            this.btnOUTPUT.UseVisualStyleBackColor = false;
+            // 
+            // lblOTHER
+            // 
+            this.lblOTHER.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.lblOTHER, "lblOTHER");
+            this.lblOTHER.Name = "lblOTHER";
+            // 
             // workDetailMotionfrm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.panelOTHER);
             this.Controls.Add(this.panelClose);
             this.Controls.Add(this.panelFEED);
             this.ForeColor = System.Drawing.Color.Black;
@@ -95,6 +124,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.workDetailMotionfrm_FormClosing);
             this.panelFEED.ResumeLayout(false);
             this.panelClose.ResumeLayout(false);
+            this.panelOTHER.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -106,6 +136,9 @@
         private System.Windows.Forms.Button btnDOUBLE_MOTION;
         private System.Windows.Forms.Panel panelClose;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Panel panelOTHER;
+        private System.Windows.Forms.Button btnOUTPUT;
+        private System.Windows.Forms.Label lblOTHER;
 
 
 

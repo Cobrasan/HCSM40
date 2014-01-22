@@ -20,6 +20,7 @@ namespace Alchemist
 
 #if HCSM40            
             Program.MainForm.SetBtnEvent(SystemConstants.DOUBLE_MOTION_BTN, SystemConstants.BTN_PUSH, btnDOUBLE_MOTION);
+            Program.MainForm.SetBtnEvent(SystemConstants.OUTPUT_BTN, SystemConstants.BTN_PUSH, btnOUTPUT);
 #endif
 
         }
@@ -29,6 +30,7 @@ namespace Alchemist
         {
 #if HCSM40
             mainfrm.CheckBtnAnd_ChangeColor(SystemConstants.DOUBLE_MOTION_BTN, btnDOUBLE_MOTION);
+            mainfrm.CheckBtnAnd_ChangeColor(SystemConstants.OUTPUT_BTN, btnOUTPUT);
 #endif
         }
 

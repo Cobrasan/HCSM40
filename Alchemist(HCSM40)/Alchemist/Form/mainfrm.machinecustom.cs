@@ -83,6 +83,7 @@ namespace Alchemist
                 // 0 ページ目
                 int pg = 0;
                 statusDspMapAdd(pg, SystemConstants.MOTION_STATUS_BOX0, SystemConstants.DOUBLE_MOTION_BTN, SystemConstants.STAT_DSP_MSG_DOUBLEMODE1);
+                statusDspMapAdd(pg, SystemConstants.MOTION_STATUS_BOX1, SystemConstants.OUTPUT_BTN, SystemConstants.STAT_DSP_MSG_OUTPUT1);
 
                 // ページ切替ボタン
                 btnWorkMotionNext.Visible = false;

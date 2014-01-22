@@ -436,10 +436,11 @@ namespace Alchemist
             int i = 0;
             foreach (var entry in nodes)
             {
-                LearnData[i].Type = SystemConstants.WORKMEM_TYPE_WORKDATA;
                 LearnData[i].SearchType = type;
                 LearnData[i].ID = Int32.Parse(entry.Attribute("workid").Value.Remove(0, 2), System.Globalization.NumberStyles.AllowHexSpecifier);
                 LearnData[i].value = entry.Attribute("value").Value;
+                LearnData[i].Type = Int32.Parse(entry.Attribute("type").Value);
+                // LearnData[i].Type = SystemConstants.WORKMEM_TYPE_WORKDATA;
                 i++;
             }
 
@@ -538,6 +539,7 @@ namespace Alchemist
                 var elem = new XElement("entry");
                 elem.SetAttributeValue("workid", string.Format("0x{0:X4}", LearnData[i].ID));
                 elem.SetAttributeValue("value", LearnData[i].value);
+                elem.SetAttributeValue("type", LearnData[i].Type);
                 learn.Add(elem);
             }
 
@@ -802,6 +804,27 @@ namespace Alchemist
         }
 
         // キーに記載されているストリップ長を返す
+        public double ConvKeytoWireLength(string[] ItemKeys)
+        {
+            string wireLength = "";
+            double wireLen = 0.0;
+
+            wireLength = ItemKeys[SystemConstants.DB_GROUP_KEY_WIRELENGTH1];
+            
+            // double型に変換する。変換が不適切の場合、0.0を返す
+            try
+            {
+                wireLen = Convert.ToDouble(wireLength);
+            }
+            catch
+            {
+                wireLen = 0.0;
+            }
+
+            return wireLen;
+        }
+
+        // キーに記載されているストリップ長を返す
         public double ConvKeytoStrip(int Side, string[] ItemKeys)
         {
             string stripLength = "";
@@ -830,6 +853,24 @@ namespace Alchemist
             }
 
             return stripLen;
+        }
+
+        /// <summary>
+        /// 切断長の学習値がLearnDataに含まれているかを確認する
+        /// </summary>
+        /// <param name="LearnData"></param>
+        /// <returns></returns>
+        public bool IsIncludeWireLength(LearnDataStruct[] LearnData)
+        {
+            int workID = SystemConstants.WIRE_LENGTH1;                        
+
+            foreach (LearnDataStruct learn in LearnData)
+            {
+                if (learn.ID == workID && learn.Type == SystemConstants.WORKMEM_TYPE_WORKDATA)
+                    return true;
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -862,5 +903,95 @@ namespace Alchemist
             return false;
         }
 
+        /// <summary>
+        /// learndata.xmlから選択済みのkeyを取得する
+        /// </summary>
+        /// <param name="ItemKeys"></param>
+        /// <returns>
+        /// データが１つでもあれば学習データモードで成功を返す。
+        /// なければエラーを返す。
+        /// </returns>
+        public int GetItemKeys(ref string[] ItemKeys)
+        {
+            //ロードチェック
+            if (initFlag != true)
+            {
+                return SystemConstants.ERR_UNINITIALIZED;
+            }
+
+            // XMLファイルを読む
+            var nodes = from n in xmlAccessor.document.Elements("learndata")
+                        select n;
+
+            //ItemKeys取得
+            var learndata = nodes.First();
+            ItemKeys[0] = learndata.Attribute("key0").Value;
+            ItemKeys[1] = learndata.Attribute("key1").Value;
+            ItemKeys[2] = learndata.Attribute("key2").Value;
+            ItemKeys[3] = learndata.Attribute("key3").Value;
+            ItemKeys[4] = learndata.Attribute("key4").Value;
+            ItemKeys[5] = learndata.Attribute("key5").Value;
+            ItemKeys[6] = learndata.Attribute("key6").Value;
+            ItemKeys[7] = learndata.Attribute("key7").Value;
+            ItemKeys[8] = learndata.Attribute("key8").Value;
+            ItemKeys[9] = learndata.Attribute("key9").Value;
+
+            // データがあれば学習データモード
+            foreach (string s in ItemKeys)
+            {
+                if (!string.IsNullOrEmpty(s)) return SystemConstants.LSPF_SUCCESS;
+            }
+
+            return SystemConstants.ERR_LSPF_NO_LEARN_DATA;
+        }
+
+        /// <summary>
+        /// learndata.xmlにkeysを書き込む
+        /// </summary>
+        /// <param name="ItemKeys"></param>
+        /// <returns></returns>
+        public int WriteItemKeys(string[] ItemKeys)
+        {
+            //ロードチェック
+            if (initFlag != true)
+            {
+                return SystemConstants.ERR_UNINITIALIZED;
+            }
+
+            // XMLファイルを読む
+            var nodes = from n in xmlAccessor.document.Elements("learndata")
+                        select n;
+
+            var learndata = nodes.First();
+
+            learndata.SetAttributeValue("key0", ItemKeys[0]);
+            learndata.SetAttributeValue("key1", ItemKeys[1]);
+            learndata.SetAttributeValue("key2", ItemKeys[2]);
+            learndata.SetAttributeValue("key3", ItemKeys[3]);
+            learndata.SetAttributeValue("key4", ItemKeys[4]);
+            learndata.SetAttributeValue("key5", ItemKeys[5]);
+            learndata.SetAttributeValue("key6", ItemKeys[6]);
+            learndata.SetAttributeValue("key7", ItemKeys[7]);
+            learndata.SetAttributeValue("key8", ItemKeys[8]);
+            learndata.SetAttributeValue("key9", ItemKeys[9]);
+
+            // XMLファイルにセーブする
+            try
+            {
+                // XMLファイルを開く
+                xmlAccessor.SaveXmlFile(xmlFileName);
+
+            }
+            catch (Exception)
+            {
+                return SystemConstants.ERR_LSPF_FILE_ERROR;
+            }
+            finally
+            {
+                Utility.DeleteBackupFile(xmlFileName);
+            }
+
+            return SystemConstants.LSPF_SUCCESS;
+        }
     }
 }

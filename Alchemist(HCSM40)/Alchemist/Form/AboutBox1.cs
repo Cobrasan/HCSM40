@@ -41,11 +41,11 @@ namespace Alchemist
                 //  - AssemblyInfo.cs
                 this.Text = String.Format("{0}  {1}", Utility.AssemblyTitle, Utility.GetMessageString(SystemConstants.SYSTEM_MSG, SystemConstants.SYSTEM_MSG031));
                 this.labelProductName.Text = Utility.AssemblyProduct;
-                this.labelVersion.Text = String.Format("{0}  {1}", Utility.GetMessageString(SystemConstants.SYSTEM_MSG, SystemConstants.SYSTEM_MSG032), Utility.AssemblyVersion);
+                this.labelVersion.Text = String.Format("Alchemist{0}  {1}", Utility.GetMessageString(SystemConstants.SYSTEM_MSG, SystemConstants.SYSTEM_MSG032), Utility.AssemblyVersion);
                 this.labelCopyright.Text = Utility.AssemblyCopyright;
                 this.labelCompanyName.Text = Utility.AssemblyCompany;
                 this.textBoxDescription.Text = Utility.AssemblyDescription;
-                this.labelMachineVersion.Text = String.Format("{0}  {1}", Utility.GetMessageString(SystemConstants.SYSTEM_MSG, SystemConstants.SYSTEM_MSG032), Utility.AssemblyMachineVersion);
+                this.labelMachineVersion.Text = String.Format("Machine{0}  {1}", Utility.GetMessageString(SystemConstants.SYSTEM_MSG, SystemConstants.SYSTEM_MSG032), Utility.AssemblyMachineVersion);
                 this.labelOptions.Text = getCompileOptions();
             }
         }

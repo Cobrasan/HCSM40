@@ -157,7 +157,7 @@
     <value>２段動作</value>
   </data>
   <data name="STA_001F" xml:space="preserve">
-    <value />
+    <value>外部出力</value>
   </data>
   <data name="STA_0020" xml:space="preserve">
     <value />
