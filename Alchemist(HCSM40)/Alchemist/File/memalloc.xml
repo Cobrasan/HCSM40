@@ -1,5 +1,5 @@
 <memalloc>
-	<machine id="HCSM40 Rev.0.102"/>
+	<machine id="HCSM40 Rev.0.103"/>
 	<workid_type type="1">
 		<group code="1">
 			<workid id="0x0101" sortno="1" address="0x1005" double_word="0" value_factor="1" bank_store="1" min_limit="140" max_limit="99999" default_value="500" unit="mm" address_special="0" learn_key_code="2" comment=""/>
@@ -64,7 +64,7 @@
 		<group code="2">
 			<workid id="0x0201" sortno="9" address="0x3014" double_word="0" value_factor="10" bank_store="0" min_limit="-10" max_limit="10" default_value="-1" unit="mm" address_special="0" comment=""/>
 			<workid id="0x0202" sortno="10" address="0x3015" double_word="0" value_factor="1" bank_store="0" min_limit="140" max_limit="5000" default_value="480" unit="mm" address_special="0" comment=""/>
-			<workid id="0x0203" sortno="11" address="0x3016" double_word="0" value_factor="1" bank_store="0" min_limit="140" max_limit="5000" default_value="140" unit="mm" address_special="0" comment=""/>
+			<workid id="0x0203" sortno="11" address="0x3016" double_word="0" value_factor="1" bank_store="0" min_limit="120" max_limit="5000" default_value="140" unit="mm" address_special="0" comment=""/>
 			<workid id="0x0204" sortno="12" address="0x3017" double_word="0" value_factor="1" bank_store="0" min_limit="140" max_limit="5000" default_value="160" unit="mm" address_special="0" comment=""/>
 			<workid id="0x0205" sortno="13" address="0x3018" double_word="0" value_factor="1" bank_store="0" min_limit="140" max_limit="5000" default_value="120" unit="mm" address_special="0" comment=""/>
 			<workid id="0x0206" sortno="14" address="0x3019" double_word="0" value_factor="1" bank_store="0" min_limit="100" max_limit="5000" default_value="275" unit="mm" address_special="0" comment=""/>
